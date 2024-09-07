@@ -1,0 +1,130 @@
+.header {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	background-color: #666;
+	&__container {
+		max-width: 1920px;
+		width: 100%;
+		height: 100vh;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		display: flex;
+		justify-content: center;
+	}
+	&__background {
+		width: auto;
+		height: 100%;
+		object-fit: cover;
+	}
+	&__nav-menu {
+	}
+}
+
+.nav-menu {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	z-index: 1000;
+	&__container {
+		margin-bottom: -5px;
+		display: flex;
+		justify-content: space-between;
+		background-color: #EBE6DB;
+		border-radius: 30px 30px 0px 0px;
+		height: 176px;
+		box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+		-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+		-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
+		position: relative;
+	}
+	&__vin-image-container {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		z-index: 1;
+	}
+	&__vine-image {
+		bottom: -50px;
+		max-width: 200px;
+	}
+	&__left-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+	}
+	&__left-list {
+		display: flex;
+		gap: 30px;
+	}
+	&__left-list-item {
+	}
+	&__center-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		z-index: 2;
+	}
+	&__center-button {
+		position: relative;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 25px;
+		z-index: 1500;
+		background-color: #33230A;
+		padding: 15px 35px;
+		color: #EBE6DB;
+		border-radius: 30px;
+		font-size: 20px;
+		& div {
+			white-space: nowrap;
+		}
+		&__center-star-marker {
+			height: 20px;
+			width: 20px;
+		}
+	}
+	&__right-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+	}
+	&__right-list {
+		display: flex;
+		gap: 30px;
+	}
+	&__right-list-item {
+	}
+}
+
+.nav-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: $mainFont;
+	font-size: 24px;
+	background-color: #EDEDED;
+	color: $mainFontColor;
+	border-radius: 30px;
+	border: 1px solid rgba($color: $mainFontColor, $alpha: 0.5);
+	padding: 14px 27px;
+	transition: all 0.3s ease 0s;
+	&:hover {
+		transition: all 0.3s ease 0s;
+		cursor: pointer;
+		background-color: $mainFontColor;
+		color: $mainBgColor;
+	}
+}
+

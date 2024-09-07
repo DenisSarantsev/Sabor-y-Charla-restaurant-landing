@@ -1,0 +1,19 @@
+@import "./common/null.scss";
+@import "./header/header.scss";
+
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	height: 100%; 
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-x: hidden;
+}
+main {
+	width: 100%;
+	display: flex;
+}
