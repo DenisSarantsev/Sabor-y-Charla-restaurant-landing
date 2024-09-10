@@ -1,0 +1,18 @@
+.bienvenido {
+	background-color: $mainBgColor;
+	&__container {
+		position: relative;
+		padding-bottom: 200px;
+	}
+	&__title {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+	}
+	&__decor {
+		position: absolute;
+		right: 0px;
+		top: 50px;
+	}
+}
+

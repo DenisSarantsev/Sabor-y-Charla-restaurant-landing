@@ -1,0 +1,21 @@
+
+.section-block {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.section-block-container {
+	max-width: 1920px;
+	width: 100%;
+}
+.section-container-vertical-padding {
+	padding: 100px 0px;
+}
+
+.block-title {
+	font-family: $mainFont;
+	color: $mainFontColor;
+	font-size: 64px;
+	line-height: 80px;
+	text-transform: uppercase;
+}

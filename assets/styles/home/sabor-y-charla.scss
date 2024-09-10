@@ -1,0 +1,54 @@
+.sabor-y-charla {
+	background-color: $mainBgColor;
+	&__container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 60px;
+		justify-content: space-between;
+	}
+	&__title {
+		display: flex;
+		justify-content: center;
+	}
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		gap: 30px;
+		width: 100%;
+	}
+	&__text-wrapper {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		justify-content: center;
+		color: $mainFontColor;
+		gap: 30px;
+		max-width: 750px;
+		padding: 30px;
+	}
+	&__text-wrapper-top-text {
+		font-family: $mainFont;
+		font-size: 37px;
+		line-height: 120%;
+		text-transform: uppercase;
+	}
+	&__text-wrapper-center-text {
+		font-family: $decorFont;
+		font-size: 90px;
+		line-height: 140%;
+		display: flex;
+		gap: 30px;
+	}
+	&__text-wrapper-bottom-text {
+		font-family: $mainFont;
+		font-size: 30px;
+		line-height: 120%;
+	}
+	&__image-wrapper {
+	}
+	&__image {
+		border-radius: 30px 0px 0px 30px;
+	}
+}
+

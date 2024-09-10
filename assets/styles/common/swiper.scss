@@ -1,0 +1,149 @@
+
+// --------------------------- Стили общего слайдера
+.swiper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ 	overflow: visible; /* Разрешаем содержимому выходить за пределы слайдера */
+  padding: 0 50px; /* Оставляем немного места по бокам */
+}
+
+.swiper-wrapper {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: visible; /* Слайды могут выходить за пределы */
+	padding-bottom: 70px;
+}
+
+.swiper-slide {
+  height: auto;
+  width: calc(100% / 5); /* Каждый слайд занимает 1/5 ширины */
+  border-radius: 30px;
+  transition: transform 0.3s ease; /* Плавное движение слайдов */
+	padding: 0px 15px;
+	width: auto; /* Автоматическая ширина, чтобы слайды адаптировались */
+  flex-shrink: 0; /* Предотвращаем сжатие слайдов */
+  & img {
+    border-radius: 30px;
+    width: 100%;
+  }
+}
+.swiper-pagination-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.swiper-pagination {
+	display: flex;
+	justify-content: center;
+	gap: 18px;
+	padding: 0 0 0 0;
+}
+
+.my-custom-prev {
+	z-index: 30;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: 1px solid $mainFontColor;
+	&:hover {
+		cursor: pointer;
+	}
+}
+.my-custom-next {
+	z-index: 30;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: 1px solid $mainFontColor;
+	&:hover {
+		cursor: pointer;
+	}
+	& img {
+		transform: rotate(180deg);
+	}
+}
+.my-custom-bullet {
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	border: 1px solid $mainFontColor;
+}
+.my-custom-bullet-active {
+	background-color: $mainFontColor;
+	width: 16px;
+	height: 16px;
+}
+.arrows-pagination {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+
+.swiper-pagination, .swiper-button-prev, .swiper-button-next, .swiper-scrollbar {
+  /* Дополнительные стили для элементов управления */
+}
+
+
+// --------------------------- Стили слайдера для блока Desayuno
+
+.swiper-desayuno-pagination {
+	display: flex;
+	justify-content: center;
+	gap: 18px;
+	padding: 0 0 0 0;
+}
+.my-custom-second-bullet {
+	width: 17px;
+	height: 17px;
+	border-radius: 50%;
+	border: 1px solid $mainFontColor;
+}
+.my-custom-second-bullet-active {
+	background-color: $mainFontColor;
+	width: 16px;
+	height: 16px;
+}
+.second-swiper-wrapper {
+	display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: visible; /* Слайды могут выходить за пределы */
+	padding-bottom: 130px;
+}
+.second-swiper-slide {
+	width: 370px;
+	height: 470px;
+  //width: calc(100% / 5); /* Каждый слайд занимает 1/5 ширины */
+  border-radius: 30px;
+  transition: transform 0.3s ease; /* Плавное движение слайдов */
+	width: auto; /* Автоматическая ширина, чтобы слайды адаптировались */
+  flex-shrink: 0; /* Предотвращаем сжатие слайдов */
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+  & img {
+		object-fit: contain;
+    border-radius: 30px;
+    width: 100%;
+		height: 100%;
+  }
+	& button {
+		width: 100%;
+		background-color: #0C0700;
+		font-size: 28px;
+		color: #E6CB96;
+		padding: 18px 5px;
+		border-radius: 8px;
+	}
+}

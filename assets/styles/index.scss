@@ -1,5 +1,9 @@
 @import "./common/null.scss";
+@import "./common/swiper.scss";
 @import "./header/header.scss";
+@import "./footer/footer.scss";
+@import "./common/common.scss";
+@import "./home/home.scss";
 
 html {
 	height: 100%;
@@ -16,4 +20,5 @@ body {
 main {
 	width: 100%;
 	display: flex;
+	flex-direction: column;
 }
