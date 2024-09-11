@@ -21,7 +21,6 @@
   width: calc(100% / 5); /* Каждый слайд занимает 1/5 ширины */
   border-radius: 30px;
   transition: transform 0.3s ease; /* Плавное движение слайдов */
-	padding: 0px 15px;
 	width: auto; /* Автоматическая ширина, чтобы слайды адаптировались */
   flex-shrink: 0; /* Предотвращаем сжатие слайдов */
   & img {
@@ -76,11 +75,19 @@
 	height: 17px;
 	border-radius: 50%;
 	border: 1px solid $mainFontColor;
+	@media (max-width: 992px){
+		width: 12px;
+		height: 12px;
+	}
 }
 .my-custom-bullet-active {
 	background-color: $mainFontColor;
 	width: 16px;
 	height: 16px;
+	@media (max-width: 992px){
+		width: 12px;
+		height: 12px;
+	}
 }
 .arrows-pagination {
 	width: 100%;
@@ -107,11 +114,19 @@
 	height: 17px;
 	border-radius: 50%;
 	border: 1px solid $mainFontColor;
+	@media (max-width: 992px){
+		width: 12px;
+		height: 12px;
+	}
 }
 .my-custom-second-bullet-active {
 	background-color: $mainFontColor;
 	width: 16px;
 	height: 16px;
+	@media (max-width: 992px){
+		width: 12px;
+		height: 12px;
+	}
 }
 .second-swiper-wrapper {
 	display: flex;
@@ -132,6 +147,10 @@
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
+	@media (max-width: 650px){
+		padding: 0px 20px;
+		height: 340px;
+	}
   & img {
 		object-fit: contain;
     border-radius: 30px;
@@ -143,7 +162,13 @@
 		background-color: #0C0700;
 		font-size: 28px;
 		color: #E6CB96;
-		padding: 18px 5px;
+		padding: 18px 10px;
 		border-radius: 8px;
+		@media (max-width: 1100px){
+			font-size: 24px;
+		}
+		@media (max-width: 992px){
+			font-size: 20px;
+		}
 	}
 }

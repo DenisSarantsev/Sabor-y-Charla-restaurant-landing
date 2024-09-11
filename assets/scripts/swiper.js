@@ -8,8 +8,8 @@ import 'swiper/css/bundle';
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 4, // Отображать 4 слайдов одновременно
-  spaceBetween: 0, // Расстояние между слайдами
+  slidesPerView: 2, // Отображать 4 слайдов одновременно
+  spaceBetween: 15, // Расстояние между слайдами
   centeredSlides: true, // Центрировать активный слайд
 	slidesPerGroup: 1,
 
@@ -31,14 +31,26 @@ const swiper = new Swiper('.swiper', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+	// Breakpoints для изменения количества видимых слайдов в зависимости от ширины экрана
+	breakpoints: {
+		1100: {
+			slidesPerView: 4, // Показать 3 слайда
+			spaceBetween: 30, // Расстояние между слайдами
+		},
+		768: {
+			slidesPerView: 3, // Показать 3 слайда
+			spaceBetween: 15, // Расстояние между слайдами
+		},
+	}
 });
 
 // Второй слайдер
 const desayunoSwiper = new Swiper('.second-slider', {
 	direction: 'horizontal',
   loop: true,
-	slidesPerView: 4, // Отображать 4 слайдов одновременно
-  spaceBetween: 30, // Расстояние между слайдами
+	slidesPerView: 1, // Отображать 4 слайдов одновременно
+  spaceBetween: 15, // Расстояние между слайдами
   centeredSlides: true, // Центрировать активный слайд
 	slidesPerGroup: 1,
 
@@ -62,4 +74,19 @@ const desayunoSwiper = new Swiper('.second-slider', {
 	scrollbar: {
     el: '.swiper-scrollbar',
   },
+
+	breakpoints: {
+		1300: {
+			slidesPerView: 4, // Показать 3 слайда
+			spaceBetween: 30, // Расстояние между слайдами
+		},
+		992: {
+			slidesPerView: 3, // Показать 3 слайда
+			spaceBetween: 15, // Расстояние между слайдами
+		},
+		650: {
+			slidesPerView: 2, // Показать 3 слайда
+			spaceBetween: 15, // Расстояние между слайдами
+		},
+	}
 });

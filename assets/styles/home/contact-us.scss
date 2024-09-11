@@ -3,10 +3,19 @@
 	&__container {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		gap: 30px;
+		@media (max-width: 1920px){
+			gap: 1.563vw;
+		}
 	}
 	&__image-wrapper {
 		border-radius: 0px 30px 30px 0px;
+		& img {
+			@media (max-width: 1920px){
+				max-width: 47.708vw;
+			}
+		}
 	}
 	&__content-wrapper {
 		padding: 30px 100px;
@@ -15,11 +24,18 @@
 		align-items: start;
 		justify-content: center;
 		gap: 50px;
+		@media (max-width: 1920px){
+			padding: 1.563vw 5.208vw;
+			gap: 2.604vw;
+		}
 	}
 	&__title {
 		color: #FFD28D;
 		font-size: 60px;
 		font-family: $mainFont;
+		@media (max-width: 1920px){
+			font-size: 3.125vw;
+		}
 	}
 	&__address-container {
 		font-family: $mainFont;
@@ -29,6 +45,13 @@
 		gap: 20px;
 		color: #FFFFFF;
 		font-size: 16px;
+		@media (max-width: 992px){
+			gap: 15px;
+		}
+		@media (max-width: 768px){
+			font-size: 14px;
+			gap: 10px;
+		}
 	}
 	&__pointer-wrapper {
 		display: flex;
@@ -42,6 +65,9 @@
 	&__address-title {
 		color: #FFD28D;
 		font-size: 28px;
+		@media (max-width: 1500px){
+			font-size: 1.867vw;
+		}
 	}
 	&__address {
 	}
@@ -56,6 +82,11 @@
 			padding: 15px;
 			font-size: 20px;
 			color: #FFFFFF;
+			@media (max-width: 992px){
+				font-size: 18px;
+				padding: 10px 15px;
+
+			}
 		}
 	}
 }

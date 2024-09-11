@@ -3,12 +3,19 @@
 	&__container {
 		display: flex;
 		flex-direction: row;
+		align-items: center;
 		gap: 30px;
+		@media (max-width: 1920px){
+			gap: 1.563vw;
+		}
 	}
 	&__image-wrapper {
 	}
 	&__image {
 		border-radius: 0px 30px 30px 0px;
+		@media (max-width: 1920px){
+			max-width: 46.563vw;
+		}
 	}
 	&__content-wrapper {
 		padding: 30px 100px;
@@ -17,16 +24,29 @@
 		align-items: start;
 		justify-content: center;
 		gap: 50px;
+		@media (max-width: 1920px){
+			padding: 1.563vw 5.208vw;
+			gap: 2.604vw;
+		}
 	}
 	&__title {
 		color: #FFD28D;
 		font-size: 60px;
 		font-family: $mainFont;
+		@media (max-width: 1920px){
+			font-size: 3.125vw;
+		}
 	}
 	&__subtitle {
 		color: #F6F1E8;
 		font-size: 20px;
 		line-height: 120%;
+		@media (max-width: 1200px){
+			font-size: 18px;
+		}
+		@media (max-width: 1100px){
+			font-size: 16px;
+		}
 	}
 	&__schedule {
 		font-family: $mainFont;
@@ -36,6 +56,14 @@
 		flex-direction: column;
 		gap: 20px;
 		color: #FFFFFF;
+		@media (max-width: 1200px){
+			font-size: 22px;
+			gap: 15px;
+		}
+		@media (max-width: 1100px){
+			font-size: 20px;
+			gap: 10px;
+		}
 	}
 	&__schedule-top-line {
 		padding-bottom: 15px;
@@ -50,6 +78,10 @@
 			padding: 15px;
 			font-size: 20px;
 			color: #FFFFFF;
+			@media (max-width: 1100px){
+				padding: 10px 15px;
+				font-size: 18px;
+			}
 		}
 	}
 }

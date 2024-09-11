@@ -4,12 +4,16 @@
 		display: flex;
 		flex-direction: column;
 		gap: 70px;
+		@media (max-width: 1920px){
+			gap: 3.646vw;
+		}
 	}
 	&__title {
 		width: 100%;
 		text-align: center;
 	}
 	&__slider {
+		overflow: hidden;
 	}
 }
 

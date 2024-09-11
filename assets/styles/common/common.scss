@@ -1,4 +1,6 @@
 
+
+
 .section-block {
 	width: 100%;
 	display: flex;
@@ -10,6 +12,9 @@
 }
 .section-container-vertical-padding {
 	padding: 100px 0px;
+	@media (max-width: 1920px){
+		padding: 5.208vw 0px;
+	}
 }
 
 .block-title {
@@ -18,4 +23,10 @@
 	font-size: 64px;
 	line-height: 80px;
 	text-transform: uppercase;
+	@media (max-width: 1920px){
+		font-size: 3.333vw;
+	}
+	// @media (max-width: 992px){
+	// 	font-size: 33px;
+	// }
 }

@@ -38,6 +38,10 @@
 		-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.3);
 		position: relative;
 		padding: 0px 30px;
+		@media (max-width: 1920px){
+			height: 9.167vw;
+			padding: 0px 1.563vw;
+		}
 	}
 	&__vin-image-container {
 		position: absolute;
@@ -49,8 +53,14 @@
 		z-index: 1;
 	}
 	&__vine-image {
-		bottom: -50px;
-		max-width: 200px;
+		bottom: -100px;
+		max-width: 150px;
+		@media (max-width: 1600px){
+			max-width: 9.375vw;
+		}
+		@media (max-width: 1300px){
+			max-width: 8vw;
+		}
 	}
 	&__left-wrapper {
 		display: flex;
@@ -63,6 +73,9 @@
 	&__left-list {
 		display: flex;
 		gap: 30px;
+		@media (max-width: 1920px){
+			gap: 1.563vw;
+		}
 	}
 	&__left-list-item {
 	}
@@ -84,12 +97,21 @@
 		color: #EBE6DB;
 		border-radius: 30px;
 		font-size: 20px;
+		@media (max-width: 1920px){
+			font-size: 1.042vw;
+			padding: 0.781vw 1.823vw;
+			gap: 1.302vw;
+		}
 		& div {
 			white-space: nowrap;
 		}
 		&__center-star-marker {
 			height: 20px;
 			width: 20px;
+			@media (max-width: 1920px){
+				height: 1.042vw;
+				width: 1.042vw;
+			}
 		}
 	}
 	&__right-wrapper {
@@ -103,6 +125,9 @@
 	&__right-list {
 		display: flex;
 		gap: 30px;
+		@media (max-width: 1920px){
+			gap: 1.563vw;
+		}
 	}
 	&__right-list-item {
 	}
@@ -125,6 +150,11 @@
 		cursor: pointer;
 		background-color: $mainFontColor;
 		color: $mainBgColor;
+	}
+	@media (max-width: 1920px){
+		padding: 0.729vw 1.406vw;
+		font-size: 1.25vw;
+		border-radius: 1.563vw;
 	}
 }
 
