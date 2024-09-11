@@ -25,6 +25,8 @@
 	bottom: 0px;
 	width: 100%;
 	z-index: 1000;
+	margin-bottom: 0px;
+	transition: all 0.3s ease 0s;
 	&__container {
 		margin-bottom: -5px;
 		display: flex;
@@ -131,6 +133,11 @@
 	}
 	&__right-list-item {
 	}
+}
+
+.hidden-nav {
+	transition: all 0.3s ease 0s;
+	margin-bottom: -300px;
 }
 
 .nav-button {
