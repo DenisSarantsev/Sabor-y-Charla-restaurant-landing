@@ -8,7 +8,7 @@ import 'swiper/css/bundle';
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 2, // Отображать 4 слайдов одновременно
+  slidesPerView: 1.2, // Отображать 4 слайдов одновременно
   spaceBetween: 15, // Расстояние между слайдами
   centeredSlides: true, // Центрировать активный слайд
 	slidesPerGroup: 1,

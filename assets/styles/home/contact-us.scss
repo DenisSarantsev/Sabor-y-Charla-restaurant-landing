@@ -8,12 +8,23 @@
 		@media (max-width: 1920px){
 			gap: 1.563vw;
 		}
+		@media (max-width: 768px){
+			flex-direction: column-reverse;
+			gap: 32px;
+		}
 	}
 	&__image-wrapper {
 		border-radius: 0px 30px 30px 0px;
+		@media (max-width: 768px){
+			border-radius: 0px 15px 15px 0px;
+			padding-right: 5px;
+		}
 		& img {
 			@media (max-width: 1920px){
 				max-width: 47.708vw;
+			}
+			@media (max-width: 768px){
+				max-width: 100%;
 			}
 		}
 	}
@@ -28,6 +39,10 @@
 			padding: 1.563vw 5.208vw;
 			gap: 2.604vw;
 		}
+		@media (max-width: 768px){
+			align-items: center;
+			gap: 32px;
+		}
 	}
 	&__title {
 		color: #FFD28D;
@@ -35,6 +50,9 @@
 		font-family: $mainFont;
 		@media (max-width: 1920px){
 			font-size: 3.125vw;
+		}
+		@media (max-width: 768px){
+			font-size: 60px;
 		}
 	}
 	&__address-container {
@@ -49,8 +67,9 @@
 			gap: 15px;
 		}
 		@media (max-width: 768px){
-			font-size: 14px;
-			gap: 10px;
+			font-size: 16px;
+			gap: 16px;
+			align-items: center;
 		}
 	}
 	&__pointer-wrapper {
@@ -67,6 +86,9 @@
 		font-size: 28px;
 		@media (max-width: 1500px){
 			font-size: 1.867vw;
+		}
+		@media (max-width: 768px){
+			font-size: 28px;
 		}
 	}
 	&__address {

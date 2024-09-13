@@ -22,6 +22,18 @@
 		@media (max-width: 1920px){
 			max-width: 69.167vw;
 		}
+		@media (max-width: 768px){
+			display: none;
+		}
+	}
+	&__decor-mobile {
+		position: absolute;
+		right: 0px;
+		top: 90px;
+		width: 90%;
+		@media (min-width: 769px) {
+			display: none;
+		}
 	}
 }
 

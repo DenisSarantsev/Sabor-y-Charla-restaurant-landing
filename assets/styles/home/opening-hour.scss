@@ -8,13 +8,25 @@
 		@media (max-width: 1920px){
 			gap: 1.563vw;
 		}
+		@media (max-width: 768px){
+			flex-direction: column-reverse;
+			gap: 32px;
+		}
 	}
 	&__image-wrapper {
+		@media (max-width: 768px){
+			padding-right: 15px;
+		}
 	}
 	&__image {
 		border-radius: 0px 30px 30px 0px;
 		@media (max-width: 1920px){
 			max-width: 46.563vw;
+		}
+		@media (max-width: 768px){
+			max-width: 100%;
+			height: auto;
+			border-radius: 0px 15px 15px 0px;
 		}
 	}
 	&__content-wrapper {
@@ -28,6 +40,10 @@
 			padding: 1.563vw 5.208vw;
 			gap: 2.604vw;
 		}
+		@media (max-width: 768px){
+			align-items: center;
+			gap: 32px;
+		}
 	}
 	&__title {
 		color: #FFD28D;
@@ -35,6 +51,10 @@
 		font-family: $mainFont;
 		@media (max-width: 1920px){
 			font-size: 3.125vw;
+		}
+		@media (max-width: 768px){
+			font-size: 48px;
+			text-align: center;
 		}
 	}
 	&__subtitle {
@@ -64,6 +84,9 @@
 			font-size: 20px;
 			gap: 10px;
 		}
+		@media (max-width: 768px){
+			font-size: 24px;
+		}
 	}
 	&__schedule-top-line {
 		padding-bottom: 15px;
@@ -81,6 +104,9 @@
 			@media (max-width: 1100px){
 				padding: 10px 15px;
 				font-size: 18px;
+			}
+			@media (max-width: 768px){
+				font-size: 20px;
 			}
 		}
 	}

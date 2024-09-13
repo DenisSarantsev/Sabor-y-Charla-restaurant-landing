@@ -26,6 +26,9 @@
   & img {
     border-radius: 30px;
     width: 100%;
+		@media (max-width: 768px){
+			border-radius: 15px;
+		}
   }
 }
 .swiper-pagination-wrapper {
@@ -118,6 +121,10 @@
 		width: 12px;
 		height: 12px;
 	}
+	@media (max-width: 768px){
+		width: 17px;
+		height: 17px;
+	}	
 }
 .my-custom-second-bullet-active {
 	background-color: $mainFontColor;
@@ -127,6 +134,10 @@
 		width: 12px;
 		height: 12px;
 	}
+	@media (max-width: 768px){
+		width: 17px;
+		height: 17px;
+	}	
 }
 .second-swiper-wrapper {
 	display: flex;
@@ -169,6 +180,9 @@
 		}
 		@media (max-width: 992px){
 			font-size: 20px;
+		}
+		@media (max-width: 768px){
+			font-size: 28px;
 		}
 	}
 }
