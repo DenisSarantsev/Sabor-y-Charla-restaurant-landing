@@ -8,7 +8,7 @@ import 'swiper/css/bundle';
 const swiper = new Swiper('.swiper', {
   direction: 'horizontal',
   loop: true,
-  slidesPerView: 1.2, // Отображать 4 слайдов одновременно
+  slidesPerView: 1.7, // Отображать 4 слайдов одновременно
   spaceBetween: 15, // Расстояние между слайдами
   centeredSlides: true, // Центрировать активный слайд
 	slidesPerGroup: 1,
@@ -42,6 +42,10 @@ const swiper = new Swiper('.swiper', {
 			slidesPerView: 3, // Показать 3 слайда
 			spaceBetween: 15, // Расстояние между слайдами
 		},
+		768: {
+			slidesPerView: 1.2, // Показать 3 слайда
+			spaceBetween: 15, // Расстояние между слайдами
+		},
 	}
 });
 
@@ -49,7 +53,7 @@ const swiper = new Swiper('.swiper', {
 const desayunoSwiper = new Swiper('.second-slider', {
 	direction: 'horizontal',
   loop: true,
-	slidesPerView: 1, // Отображать 4 слайдов одновременно
+	slidesPerView: 1.4, // Отображать 4 слайдов одновременно
   spaceBetween: 15, // Расстояние между слайдами
   centeredSlides: true, // Центрировать активный слайд
 	slidesPerGroup: 1,
@@ -86,6 +90,10 @@ const desayunoSwiper = new Swiper('.second-slider', {
 		},
 		650: {
 			slidesPerView: 2, // Показать 3 слайда
+			spaceBetween: 15, // Расстояние между слайдами
+		},
+		500: {
+			slidesPerView: 1, // Показать 3 слайда
 			spaceBetween: 15, // Расстояние между слайдами
 		},
 	}

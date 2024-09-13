@@ -9,6 +9,9 @@
 		@media (max-width: 1920px){
 			gap: 3.125vw;
 		}
+		@media (max-width: 768px){
+			margin-top: 10px;
+		}
 	}
 	&__title {
 		display: flex;

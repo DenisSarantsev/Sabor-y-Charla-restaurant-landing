@@ -7,6 +7,13 @@
 		@media (max-width: 1920px){
 			gap: 3.646vw;
 		}
+		@media (max-width: 768px){
+			padding-top: 10vw;
+			gap: 32px;
+		}
+		@media (max-width: 500px){
+			gap: 15px;
+		}
 	}
 	&__title {
 		width: 100%;
