@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.4 18.26">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #ddc383;
+      }
+
+      .cls-2 {
+        opacity: .5;
+      }
+    </style>
+  </defs>
+  <g id="_Шар_1" data-name="Шар_1">
+    <g>
+      <g class="cls-2">
+        <path class="cls-1" d="M0,18.26c9.47-3.59,18.93-7.18,28.4-10.77,0-1.55,0-3.1,0-4.66C18.93,6.44,9.47,10.05,0,13.66v4.6Z"/>
+      </g>
+      <g class="cls-2">
+        <path class="cls-1" d="M0,11.2C9.37,7.46,18.73,3.73,28.1,0c-.7,0-1.4.01-2.1.02C17.33,3.26,8.67,6.51,0,9.75v1.45Z"/>
+      </g>
+    </g>
+  </g>
+</svg>

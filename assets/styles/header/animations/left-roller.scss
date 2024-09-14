@@ -22,7 +22,8 @@
 		display: flex;
 		flex-direction: column;
 		gap: 7px;
-		animation: showLeftRoller 6s ease-in-out 3s forwards;
+		z-index: 5;
+		animation: showLeftRoller 7s ease-in-out 3.2s forwards;
 		@media (max-height: 1180px){
 			gap: 0.593vh;
 		}
@@ -63,15 +64,16 @@
 		height: 20px;
 		display: flex;
 		justify-content: center;
+		z-index: 9;
 	}
 	&__left-roller-bottom-lamel {
 		position: absolute;
 		object-fit: cover;
-		z-index: 0;
+		z-index: 6;
 	}
 	&__left-roller-lamel-grip {
 		width: 15px;
-		z-index: 1;
+		z-index: 7;
 		@media (max-height: 1180px){
 			width: 1.271vh;
 		}

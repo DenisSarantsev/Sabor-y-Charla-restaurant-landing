@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40.19 66.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#_Градієнт_без_назви_127);
+      }
+    </style>
+    <linearGradient id="_Градієнт_без_назви_127" data-name="Градієнт без назви 127" x1="9.7" y1="-2.78" x2="30.5" y2="69.77" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#1d1d1b"/>
+      <stop offset=".05" stop-color="#24211d"/>
+      <stop offset=".12" stop-color="#3a2e24"/>
+      <stop offset=".21" stop-color="#5d432f"/>
+      <stop offset=".31" stop-color="#8e603f"/>
+      <stop offset=".35" stop-color="#a56e47"/>
+      <stop offset=".42" stop-color="#b17d47"/>
+      <stop offset=".48" stop-color="#c19147"/>
+      <stop offset=".66" stop-color="#a0704e"/>
+      <stop offset=".71" stop-color="#906647"/>
+      <stop offset=".83" stop-color="#674c38"/>
+      <stop offset=".98" stop-color="#26221e"/>
+      <stop offset="1" stop-color="#1d1d1b"/>
+    </linearGradient>
+  </defs>
+  <g id="_Шар_1" data-name="Шар_1">
+    <rect class="cls-1" width="40.19" height="66.99"/>
+  </g>
+</svg>

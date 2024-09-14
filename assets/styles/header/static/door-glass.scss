@@ -1,0 +1,112 @@
+.door-glass-wrapper {
+	//background-color: rgba($color: blueviolet, $alpha: 0.4);
+	position: absolute; /* Позиционирование внутри родителя */
+	top: 325px; /* Позиция от левого края родителя */
+	left: 366.5px;
+	width: 360px;
+	height: 800px;
+	transition: left 0.5s ease; /* Анимация для плавного движения */
+	overflow: hidden;
+	@media (max-height:	1180px){
+		width: 30.6vh;
+		left: 30.8vh;
+		top: 27.5vh;
+		height: 68vh;
+	}
+	&__left-light-glasses {
+		position: absolute;
+		top: 215px;
+		left: 27px;
+		width: 100px;
+		height: 495px;
+		object-fit: cover;
+		opacity: 0;
+		animation: innerRestaurantLight 0s linear 9s forwards;
+		@media (max-height:	1180px){
+			top: 18.22vh;
+			left: 2.288vh;
+			width: 8.475vh;
+			height: 41.949vh;
+		}
+	}
+	&__left-glass-shine-wrapper {
+		position: absolute;
+		top: 215px;
+		left: 27px;
+		width: 100px;
+		height: 495px;
+		object-fit: cover;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		@media (max-height:	1180px){
+			top: 18.22vh;
+			left: 2.288vh;
+			width: 8.475vh;
+			height: 41.949vh;
+		}
+	}
+	&__left-glass-vertical-line {
+		position: absolute;
+		top: 0;
+		left: 43px;
+		width: auto;
+		height: 100%;
+		@media (max-height:	1180px){
+			top: 0;
+			left: 3.644vh;
+			width: auto;
+			height: 100%;
+		}
+	}
+	&__right-glasses-container {
+		position: relative;
+		top: 216px;
+		left: 175px;
+		width: 170px;
+		height: 284px;
+		overflow: hidden;
+		//background-color: rgba($color: red, $alpha: 0.4);
+		@media (max-height:	1180px){
+			top: 18.305vh;
+			left: 14.831vh;
+			width: 14.407vh;
+			height: 24.068vh;
+		}
+	}
+	&__right-glass-shine {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 3;
+		opacity: 0.5;
+	}
+	&__right-glass-light {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		z-index: 2;
+		opacity: 0;
+		animation: innerRestaurantBigGlassLight 0s linear 9s forwards;
+	}
+}
+
+@keyframes innerRestaurantLight {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes innerRestaurantBigGlassLight {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 0.75;
+	}
+}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 40.19 66.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #ddc383;
+      }
+
+      .cls-3 {
+        opacity: .67;
+      }
+
+      .cls-4 {
+        clip-path: url(#clippath);
+      }
+    </style>
+    <clipPath id="clippath">
+      <rect class="cls-1" width="40.19" height="66.99"/>
+    </clipPath>
+  </defs>
+  <g id="_Шар_1" data-name="Шар_1">
+    <g class="cls-4">
+      <g class="cls-3">
+        <polygon class="cls-2" points="0 40.72 67.78 16.41 67.78 4.49 0 28.04 0 40.72"/>
+      </g>
+      <g class="cls-3">
+        <polygon class="cls-2" points="0 24.56 67.89 .32 67.89 -3.31 0 21.05 0 24.56"/>
+      </g>
+      <g class="cls-3">
+        <polygon class="cls-2" points="-.06 54.9 67.83 30.66 67.83 27.03 -.06 51.39 -.06 54.9"/>
+      </g>
+      <g class="cls-3">
+        <polygon class="cls-2" points="0 62.78 102.6 26.15 102.6 20.66 0 57.48 0 62.78"/>
+      </g>
+    </g>
+  </g>
+</svg>

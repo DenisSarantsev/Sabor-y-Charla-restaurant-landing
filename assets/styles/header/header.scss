@@ -1,5 +1,7 @@
 @import "./animations/left-roller.scss";
 @import "./animations/right-roller.scss";
+@import "./static/door-glass.scss";
+@import "./static/window-glass.scss";
 
 .header {
 	width: 100%;
@@ -33,7 +35,7 @@
 		height: 100%;
 		z-index: 3;
 		background: rgb(102,102,102);
-		background: linear-gradient(180deg, rgba(102,102,102,0.7) 0%, rgba(56,56,56,1) 83%);
+		background: linear-gradient(180deg, rgba(102,102,102,0.4) 0%, rgba(0,0,0,0.4) 83%);
 	}
 	&__sidewalk-bg {
 		position: absolute;
@@ -284,9 +286,9 @@
 		width: 100%;
 		width: auto;
 		object-fit: scale-down;
-		box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
-		-webkit-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
-		-moz-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
+		// box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
+		// -webkit-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
+		// -moz-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
 		@media (max-height: 1180px){
 			height: 100vh;
 		}
