@@ -1,0 +1,220 @@
+.left-roller {
+	position: absolute; /* Позиционирование внутри родителя */
+	top: 325px; /* Позиция от левого края родителя */
+	left: 366.5px;
+	width: 360px;
+	height: 800px;
+	transition: left 0.5s ease; /* Анимация для плавного движения */
+	overflow: hidden;
+	@media (max-height:	1180px){
+		width: 30.6vh;
+		left: 30.8vh;
+		top: 27.5vh;
+		height: 68vh;
+	}
+	&__left-roller-bg {
+		background-color: #000;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 7px;
+		animation: showLeftRoller 6s ease-in-out 3s forwards;
+		@media (max-height: 1180px){
+			gap: 0.593vh;
+		}
+		@media (max-height: 1000px){
+			gap: 0.3vh;
+		}		
+		@media (max-height: 900px){
+			gap: 0.1vh;
+		}
+	}
+	&__left-roller-lamel {
+		height: 20px;
+	}
+	&__left-roller-light {
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		z-index: 10;
+		width: 100%;
+		height: 300px;
+		opacity: 0.3;
+		animation: hiddenLight 2.2s linear 3.7s forwards;
+		@media (max-height: 900px){
+			top: -20px;
+		}
+		@media (max-height: 800px){
+			top: -30px;
+		}
+		@media (max-height: 700px){
+			top: -50px;
+		}
+		@media (max-height: 600px){
+			top: -60px;
+		}
+	}
+	&__left-roller-bottom-lamel-wrapper {
+		width: 100%;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+	}
+	&__left-roller-bottom-lamel {
+		position: absolute;
+		object-fit: cover;
+		z-index: 0;
+	}
+	&__left-roller-lamel-grip {
+		width: 15px;
+		z-index: 1;
+		@media (max-height: 1180px){
+			width: 1.271vh;
+		}
+	}
+	&__right-roller {
+		position: absolute; /* Позиционирование внутри родителя */
+		top: 325px; /* Позиция от левого края родителя */
+		left: 1055px;
+		width: 384px;
+		height: 500px;
+		background-color: deepskyblue;
+		transition: left 0.5s ease; /* Анимация для плавного движения */
+		@media (max-height:	1180px){
+			width: 32.542vh;
+			left: 89.407vh;
+			top: 27.542vh;
+			height: 42.373vh;
+		}
+	}
+}
+
+@keyframes showLeftRoller {
+	0%{
+		top: 0px;
+	}
+	5% {
+		top: 10px;
+	}
+	100% {
+		top: -1000px
+	}
+}
+
+@keyframes hiddenLight {
+	0% {
+		opacity: 0.3;
+	}
+	5% {
+		opacity: 0;
+	}
+	6% {
+		opacity: 0;
+	}
+	7% {
+		opacity: 0;
+	}
+	10% {
+		opacity: 0.3;
+	}
+	20% {
+		opacity: 0;
+	}
+	21% {
+		opacity: 0;
+	}
+	22% {
+		opacity: 0;
+	}
+	23% {
+		opacity: 0;
+	}
+	24% {
+		opacity: 0.3;
+	}
+	25% {
+		opacity: 0;
+	}
+	26% {
+		opacity: 0.3;
+	}
+	30% {
+		opacity: 0;
+	}
+	31% {
+		opacity: 0;
+	}
+	32% {
+		opacity: 0;
+	}
+	33% {
+		opacity: 0;
+	}
+	45% {
+		opacity: 0.3;
+	}
+	50% {
+		opacity: 0;
+	}
+	55% {
+		opacity: 0;
+	}
+	60% {
+		opacity: 0;
+	}
+	65% {
+		opacity: 0;
+	}
+	75% {
+		opacity: 0.3;
+	}
+	80% {
+		opacity: 0.3;
+	}
+	82% {
+		opacity: 0.3;
+	}
+	85% {
+		opacity: 0;
+	}
+	87% {
+		opacity: 0.3;
+	}
+	89% {
+		opacity: 0.3;
+	}
+	90% {
+		opacity: 0;
+	}
+	91% {
+		opacity: 0.3;
+	}
+	92% {
+		opacity: 0.3;
+	}
+	93% {
+		opacity: 0.3;
+	}
+	94% {
+		opacity: 0;
+	}
+	95% {
+		opacity: 0.3;
+	}
+	96% {
+		opacity: 0.3;
+	}
+	97% {
+		opacity: 0;
+	}
+	98% {
+		opacity: 0.3;
+	}
+	100% {
+		opacity: 0;
+	}
+}

@@ -1,0 +1,71 @@
+
+.right-roller {
+	position: relative;
+	top: 305px; /* Позиция от левого края родителя */
+	left: 1054px;
+	width: 385px;
+	height: 520px;
+	transition: left 0.5s ease; /* Анимация для плавного движения */
+	overflow: hidden;
+	@media (max-height:	1180px){
+		width: 32.627vh;
+		left: 89.322vh;
+		top: 25.847vh;
+		height: 44.068vh;
+	}
+	&__background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 25px;
+		left: 0px;
+		display: flex;
+		flex-direction: column;
+		gap: 7px;
+		background-color: #000;
+		animation: showRightRoller 7s ease-in-out 2s forwards;
+		@media (max-height: 1180px){
+			gap: 0.6vh;
+			top: 2.119vh;
+		}
+	}
+	&__lamel {
+		width: 100%;
+	}
+	&__bottom-lamel-wrapper {
+		position: relative;
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	&__lamel-grip {
+		width: 15px;
+		z-index: 4;
+		margin-top: 3px;
+		@media (max-height: 1180px){
+			width: 1.271vh;
+		}
+	}
+	&__bottom-lamel {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 20px;
+		z-index: 3;
+		object-fit: cover;
+	}
+}
+
+@keyframes showRightRoller {
+	0%{
+		top: 25px;
+	}
+	5% {
+		top: 30px;
+	}
+	100% {
+		top: -1000px
+	}
+}

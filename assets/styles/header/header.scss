@@ -1,20 +1,48 @@
+@import "./animations/left-roller.scss";
+@import "./animations/right-roller.scss";
+
 .header {
 	width: 100%;
 	display: flex;
 	justify-content: center;
-	background-color: #666;
+	background: rgb(102,102,102);
+	background: linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(56,56,56,1) 83%);
 	&__container {
 		height: 100vh;
 		position: relative;
 		top: 0px;
 		left: 0px;
+		width: 100%;
+		overflow: hidden;
 		display: flex;
 		justify-content: center;
+		z-index: 5;
 	}
-	&__background {
-		max-width: 1920px;
-		height: 100%;
+	&__deep-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
 		width: 100%;
+		height: 100%;
+		z-index: 1;
+	}
+	&__deep-bg-filter {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 3;
+		background: rgb(102,102,102);
+		background: linear-gradient(180deg, rgba(102,102,102,0.7) 0%, rgba(56,56,56,1) 83%);
+	}
+	&__sidewalk-bg {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 2;
+		height: 200px;
+		margin-bottom: -100px;
 	}
 	&__nav-menu {
 	}
@@ -239,3 +267,91 @@
 	}
 }
 
+
+
+.header-background {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1920px;
+	@media (max-width: 1920px){
+		width: 100vw;
+	}
+	&__bg-image {
+		max-width: 1920px;
+		height: 1180px;
+		width: 100%;
+		width: auto;
+		object-fit: scale-down;
+		box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
+		-webkit-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
+		-moz-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
+		@media (max-height: 1180px){
+			height: 100vh;
+		}
+	}
+}
+
+// ----------------------------- Блок с движущимися элементами
+.header-interactive {
+	width: 1920px;
+	min-height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	&__wrapper {
+		position: relative;
+		max-width: 1868px;
+		height: 1180px;
+		width: 100%;
+		@media (max-height: 1180px){
+			width: 158vh;
+		}
+	}
+}
+
+.header-static {
+	width: 1920px;
+	min-height: 100%;
+	position: absolute;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	&__wrapper {
+		position: relative;
+		max-width: 1868px;
+		height: 1180px;
+		width: 100%;
+		@media (max-height: 1180px){
+			width: 158vh;
+		}
+	}
+	&__logo-container {
+		position: absolute; /* Позиционирование внутри родителя */
+		top: 23px; /* Позиция от левого края родителя */
+		left: 122px;
+		width: 1533px;
+		height: 196px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: left 0.5s ease; /* Анимация для плавного движения */
+		& img {
+			width: 100%;
+			max-width: 430px;
+		}
+		@media (max-height:	1180px){
+			left: 10.339vh;
+			top: 1.949vh;
+			width: 129.915vh;
+			height: 16.61vh;
+			& img {
+				max-width: 36.441vh;
+			}
+		}
+	}
+}

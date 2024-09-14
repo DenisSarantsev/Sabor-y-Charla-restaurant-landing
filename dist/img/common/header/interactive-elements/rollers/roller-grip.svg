@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_Слой_2" data-name="Слой_2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2.98 2.98">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #777;
+        stroke: #141414;
+        stroke-miterlimit: 10;
+        stroke-width: .5px;
+      }
+    </style>
+  </defs>
+  <g id="_Шар_2" data-name="Шар_2">
+    <circle class="cls-1" cx="1.49" cy="1.49" r="1.24"/>
+  </g>
+</svg>
