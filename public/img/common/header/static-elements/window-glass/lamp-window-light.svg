@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 30.93 33.57">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        mix-blend-mode: color-dodge;
+      }
+
+      .cls-3 {
+        opacity: .48;
+      }
+
+      .cls-4 {
+        fill: url(#_Ѕезым_нный_градиент_492);
+        mix-blend-mode: screen;
+      }
+    </style>
+    <radialGradient id="_Ѕезым_нный_градиент_492" data-name="Ѕезым€нный градиент 492" cx="-237.85" cy="3569.27" fx="-237.85" fy="3569.27" r="3.7" gradientTransform="translate(-349.35 493.04) rotate(-180) scale(1.53 .14)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#9e7e58"/>
+      <stop offset=".02" stop-color="#947652"/>
+      <stop offset=".12" stop-color="#6d573c"/>
+      <stop offset=".23" stop-color="#4b3c2a"/>
+      <stop offset=".34" stop-color="#2f261a"/>
+      <stop offset=".47" stop-color="#1a150e"/>
+      <stop offset=".6" stop-color="#0b0906"/>
+      <stop offset=".76" stop-color="#020201"/>
+      <stop offset="1" stop-color="#000"/>
+    </radialGradient>
+  </defs>
+  <g class="cls-1">
+    <g id="_Слой_2" data-name="Слой_2">
+      <g id="_Шар_1" data-name="Шар_1">
+        <g class="cls-3">
+          <g>
+            <g>
+              <ellipse class="cls-4" cx="15.46" cy="10.48" rx="5.68" ry=".5"/>
+              <g class="cls-2">
+                <image width="22" height="12" transform="translate(4.5 -.98)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAAACXBIWXMAAAsSAAALEgHS3X78AAABoklEQVQ4jZWT3W4UMQxGj51kZnaWtoKCEBLv/zS8AHfcUSSKoJ2dnZ/E5iI720IltFiKHCn20fc5CVwefloXhTxvFAG/uPXfTAFcABFIAYIK5k5QCALmoAIqwpwdEVjLSYk/WYkKc6615hC3gyAVGnWD16IkoFr3SDXYxgpcSm3eTEZ1zJ9kexNAROiSAFVtm5ScDZEKlZMSP4Ge52w1F4NcnKWcFQsx1MImKilIhe9idRIEFTjO5WzdDIqDuyDFKAbFKxSQCMha3IMqGhURRVQIaqgIqpCCUMzZd4FiFbxmh+KYC+pKcTAztsHE7San1RwR+rbOMaXEvg24G1d9S4rCOC2kmBimhZ0Lh7kwzoUQYDVnWvP5VWxgAFmz+ZyFtzcdN/uG633DVd/RBGiSsqwFEMY5c1wy7WEhHBa+/5p4HJcz9G8wxVyG4+rFnMcx81Ej7143vH+zp+9ajvOMO3z7cWAuR8wzP4eF+4fpD+gLMMC8FpnXQt8lH8aFL3cP7LqG/a6l71q+3g+YwzCufPp89wL4v+G31zsH/MPtq4v+5m/UkNhzw26ukQAAAABJRU5ErkJggg=="/>
+              </g>
+              <g class="cls-2">
+                <image width="24" height="7" transform="translate(3.5 5.02)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAHCAYAAAAS9422AAAACXBIWXMAAAsSAAALEgHS3X78AAAA+UlEQVQokbWRS0sDMRhFTzKTzDTpG0VoETf1//8Nd7pVd4JCKT46dpxkOklciKJFxILe3Vl8h+9yRSZIIfEvyQTIkKCnBDoTfyIVwKAQGCUI6Y3JJMloydTmbHxk4wK+269WoQT9ImNQSB7qjspFAPHxdqlkGpmMsckZDxRSSp49uBYKrVitG6QQpJRIwOl8hPMtVke6riPGxNlVtVuG/J3cNgq3jilE0FoyGWoW05LFyYxh32J6PawxhBBw3lM3DfdPFTe3S1aPNbVvv4i/hU9JI6uYH/SZHQ45PppgrcGUJSEGfLulfmm4uLzj/Hr5o2+fZXdH+dXtK2rIX0L080HlAAAAAElFTkSuQmCC"/>
+              </g>
+            </g>
+            <g>
+              <g class="cls-2">
+                <image width="32" height="10" transform="translate(-.5 11.02)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAKCAYAAADVTVykAAAACXBIWXMAAAsSAAALEgHS3X78AAAAzElEQVQ4jcWRuw5BQRRF15n74CJIRIhGKPQSP8BX+FDfoFKpFBIt0dxE430UF7nIeIeTzMzOzMneK2eEN6rTrOgsXJJKerhGKOQCev0JgLzqZZ5tTPqO1spp7bbraoyQT/sMx3MGoynhYglAkHC01cgroK+CWCubkpOhVkveWV8vz0FdBy3mov5MwFMg1pEZQfcKCQ/W29iD2l0lJnwXVpvHWTaAj0cox80I7Pb2vOuL7/3d/ZIb8cPwi+wTwK/DzxDyx/CI4Hj+A0IADs+GOERbFQ+nAAAAAElFTkSuQmCC"/>
+              </g>
+              <g class="cls-2">
+                <image width="32" height="10" transform="translate(-.5 11.02)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAKCAYAAADVTVykAAAACXBIWXMAAAsSAAALEgHS3X78AAABGklEQVQ4jcWRP0sDQRBH3+7sZV3CgSn8h4JErCxE7KwknX4Dwa9qZW06sbbQLmBINLlc7nYs1JAYNKdCnGaX2WHeY3+GX1TraEsfOwMuz44x4rm+ueWq/QBgfrrLVh1cqYk2N+t60dpTEcv5yT4+pIgIB801AIIXPT1cV0Cr7l1oXHNG8+Jt3+5GQnNnm0YaeOrn+FqNGCONNDAuRgyyjPbdPZ2eErxlOIoLGd89KoBYSJwheEc9eOrBU0bo9jKsNaymASeWvCgQAy/ZiG5/wPMwVmJ9JTD5QmtBjME5IR+XGGMQscSomKnBxFnycUniLKpKWUaKqOhsGHO8z43K2f2xzNxlifAZ9ofAsuETiekY/8fg/fwPCQPwCs1AWN9rh2lFAAAAAElFTkSuQmCC"/>
+              </g>
+            </g>
+            <g class="cls-2">
+              <image width="32" height="23" transform="translate(-.5 11.02)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAXCAYAAABqBU3hAAAACXBIWXMAAAsSAAALEgHS3X78AAADrElEQVRIib2Vz2tcVRTHP/e+N28ymSS1TbQVE39Roq1UEANuXBiQbtzZhf4D7ly5cefWP6FbtwouFHRRCa7ElIIgpUqxhYitIZrEmSQzmXn33nNc3Lnpm8mPJhG8MLx5b+4753s+53vuwH9bOvicetnTvPT6pVldXLiojXoNgMWFi6cWYk76wqcfvqM3lu/y1NkJ3n5jHoAby3dZvv07f6y1ThzzRASMQSfH67x/9TXmZmp8/u0P3PzpNi/NTvLJB1fTthOROLaAepGrKmQWvlpa5rub91nd7HL/zza37qzw9dKPXP/4XQDmn33y2CKOheva4mX98vtf+Oi9BW7dWaH0yupmDx+URpEx1axR5Ianp5u8+vKLfPbNzxS55d6DjcfGP44AvfbWZZqFZ22jxW8Pd6jXMv5q9XFBqdcyJhoZU+M1GoXlTDPnwvkLfLH0K73SoXp0jvw4BPr9DisPNggCQYStTiCzUDql03MYhLL0TDQydvuGPFtjemqMh+vusbGP9IAx6JUXzvFPa5PMwnq7T2fX03PCVtfR7XsAtrsOF4QggjHwd6vDpdkCjU440g+HCnj+/LiqwhPjjs3tks2tcvCL4nwAjZGdF1ShVwZaO471dokPyla3z5uvnAXg3GRxqIjDBGgQ4cpzY2x3PdZC6ZW+E0qv+KAEUVRBVZFIC1EQVdodR7cXcK5k/pkm7Y47lMShHjjTUMCw3fV4UYJExxoDLigyIJBEOB+jeQ/OCi4z7KjQrGfkmSHIwRD2CZiezHRizBCCYKwBE5PsloIPMVnV1kmEFyUTCAqlBwjUMoNzwtxMjXur/bR9aCpGW6Cisdpdp7Q7gU5P2NkVQojH/aD9VAsyJpEAHyBIbJMXpfSKNcLczF6tQyiGCDTrhkbNoKoRZVBE4tWaGDwJrC5RsJXWWGMIQVHicwZXa+JJ6sLBArRRGHzQ2GevlQSKC5GdH0meBBgi3KpA68Fa0jgyNW5pdSRRMEMCJsZiclByawZVR/OEELcHfRQsyUv3AkiIFQaJ5PyA3FhhEIlkijx5JK5kCG0UEVE+UJzMJam3Mvw8XdNkmAHidJ+Qp++YKMAH6JaaPGSGPBCPWvYOmYQ3JWREQJUEGimYalUD0I9ExrMjzx5RyAHNbTTYvp6yH/noOB/0TyMC2Lg3G2xI5ssqngA03wuqBwypiVXZkaqra/QdqdJS0AGBat8rAjCV4vbm2VR+1YOyHmPZiipjGBpdU4k7eqj9H2sI8r+PtSVgLuyQWgAAAABJRU5ErkJggg=="/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

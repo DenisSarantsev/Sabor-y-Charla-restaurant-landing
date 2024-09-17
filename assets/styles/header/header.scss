@@ -2,6 +2,7 @@
 @import "./animations/right-roller.scss";
 @import "./static/door-glass.scss";
 @import "./static/window-glass.scss";
+@import "./static/other.scss";
 
 .header {
 	width: 100%;
@@ -355,5 +356,113 @@
 				max-width: 36.441vh;
 			}
 		}
+	}
+}
+
+
+.header-form {
+	position: absolute;
+	left: 736px;
+	top: 460px;
+	background: rgb(110,108,104);
+	background: linear-gradient(180deg, rgba(110,108,104,1) 0%, rgba(42,40,33,1) 83%);
+	border-radius: 50px;
+	max-width: 310px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__wrapper {
+		width: 100%;
+		height: 100%;
+		padding: 16px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+	}
+	&__title-container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__top-title {
+		font-size: 48px;
+		font-family: $decorFont;
+		color: #FAF6D2;
+	}
+	&__bottom-title {
+		font-size: 36px;
+		font-family: $mainFont;
+		color: #FAF6D2;
+		margin-top: -7px;
+	}
+	&__inputs-wrapper {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 16px;
+	}
+	&__inputs-item {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-bottom: 7px;
+		border-bottom: 1px solid #FAF6D2;
+	}
+	&__input-title {
+		color: #FAF6D2;
+		font-size: 16px;
+		font-family: $mainFont;
+	}
+	&__input {
+		max-width: 100px;
+		color: #FAF6D2;
+		font-size: 16px;
+		background-color: transparent;
+	}
+	&__book-button {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		&:hover {
+			cursor: pointer;
+		}
+	}
+	&__book-button-text {
+		color: #FAF6D2;
+		font-size: 24px;
+	}
+	&__book-button-arrow-wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-radius: 50%;
+		height: 40px;
+		width: 40px;
+		transition: all 0.3s ease 0s;
+		background: rgb(255,255,255);
+		background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(232,202,84,1) 36%, rgba(213,190,58,1) 83%);
+		& img {
+			transform: rotate(180deg);
+		}
+		&:hover {
+			cursor: pointer;
+			background: rgb(255,255,255);
+			background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(255,240,181,1) 36%, rgba(255,234,114,1) 83%);
+		}
+	}
+}
+
+.how-much-people-item {
+	& input {
+		max-width: 50px;
+	}
+	&>*:nth-child(2) {
+		display: flex;
+		align-items: center;
+		gap: 3px;
 	}
 }

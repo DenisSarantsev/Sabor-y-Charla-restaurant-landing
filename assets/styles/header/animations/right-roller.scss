@@ -1,12 +1,13 @@
 
 .right-roller {
 	position: relative;
-	top: 305px; /* Позиция от левого края родителя */
+	top: 320px; /* Позиция от левого края родителя */
 	left: 1054px;
 	width: 385px;
-	height: 520px;
+	height: 500px;
 	transition: left 0.5s ease; /* Анимация для плавного движения */
 	overflow: hidden;
+	z-index: 10;
 	@media (max-height:	1180px){
 		width: 32.627vh;
 		left: 89.322vh;
@@ -17,7 +18,7 @@
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		top: 25px;
+		top: -38px;
 		left: 0px;
 		display: flex;
 		flex-direction: column;
@@ -26,7 +27,7 @@
 		animation: showRightRoller 6s ease-in-out 2s forwards;
 		@media (max-height: 1180px){
 			gap: 0.6vh;
-			top: 2.119vh;
+			top: -3.22vh;
 		}
 	}
 	&__lamel {
@@ -38,6 +39,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		margin-top: -7px;
 	}
 	&__lamel-grip {
 		width: 15px;
@@ -55,15 +57,18 @@
 		height: 20px;
 		z-index: 3;
 		object-fit: cover;
+		@media (max-height: 1180px ){
+			height: 18px;
+		}
 	}
 }
 
 @keyframes showRightRoller {
 	0%{
-		top: 25px;
+		top: -38px;
 	}
 	5% {
-		top: 30px;
+		top: -28px;
 	}
 	100% {
 		top: -1000px
