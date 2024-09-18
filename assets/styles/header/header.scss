@@ -7,18 +7,18 @@
 .header {
 	width: 100%;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-end;
+	flex-direction: column-reverse;
+	align-items: center;
 	background: rgb(102,102,102);
 	background: linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(56,56,56,1) 83%);
 	&__container {
 		height: 100vh;
-		position: relative;
-		top: 0px;
-		left: 0px;
 		width: 100%;
 		overflow: hidden;
 		display: flex;
 		justify-content: center;
+		align-items: end;
 		z-index: 5;
 	}
 	&__deep-bg {
@@ -28,9 +28,11 @@
 		width: 100%;
 		height: 100%;
 		z-index: 1;
+		object-fit: cover;
 	}
 	&__deep-bg-filter {
 		position: absolute;
+		top: 0px;
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -39,7 +41,7 @@
 		background: linear-gradient(180deg, rgba(102,102,102,0.5) 0%, rgba(0,0,0,0) 83%);
 	}
 	&__sidewalk-bg {
-		position: absolute;
+		position: relative;
 		bottom: 0;
 		left: 0;
 		width: 100%;
@@ -276,7 +278,7 @@
 	height: 100vh;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: end;
 	width: 1920px;
 	@media (max-width: 1920px){
 		width: 100vw;
@@ -287,6 +289,7 @@
 		width: 100%;
 		width: auto;
 		object-fit: scale-down;
+		margin-bottom: -5px;
 		// box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
 		// -webkit-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
 		// -moz-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
@@ -303,8 +306,9 @@
 	position: absolute;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: end;
 	overflow: hidden;
+	margin-bottom: -5px;
 	&__wrapper {
 		position: relative;
 		max-width: 1868px;
@@ -312,6 +316,7 @@
 		width: 100%;
 		@media (max-height: 1180px){
 			width: 158vh;
+			height: 100vh;
 		}
 	}
 }
@@ -322,8 +327,9 @@
 	position: absolute;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	align-items: end;
 	overflow: hidden;
+	margin-bottom: -5px;
 	&__wrapper {
 		position: relative;
 		max-width: 1868px;
@@ -331,6 +337,7 @@
 		width: 100%;
 		@media (max-height: 1180px){
 			width: 158vh;
+			height: 100vh;
 		}
 	}
 	&__logo-container {
@@ -373,6 +380,12 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	@media (max-height: 1180px){
+		left: 62.19vh;
+		top: 38.983vh;
+		max-width: 26.271vh;
+		border-radius: 4.237vh;
+	}
 	&__wrapper {
 		width: 100%;
 		height: 100%;
@@ -416,6 +429,9 @@
 		color: #FAF6D2;
 		font-size: 16px;
 		font-family: $mainFont;
+		@media (max-height: 1180px){
+			font-size: 1.356vh;
+		}
 	}
 	&__input {
 		max-width: 100px;
