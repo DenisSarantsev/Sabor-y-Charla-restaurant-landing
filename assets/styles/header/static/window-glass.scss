@@ -1,5 +1,5 @@
 .window-wrapper {
-	background-color: rgba(23, 23, 23, 1); // Исправлено rgba
+	background-color: rgba(23, 23, 23, 1);
 	position: absolute;
 	top: 325px;
 	left: 1054px;
@@ -14,166 +14,107 @@
 		width: 32.712vh;
 		height: 42.542vh;
 	}
-
 	&__top-frame-image {
 		position: absolute;
 		z-index: 3;
-		width: 220px;
-		top: 75px;
-		left: 80px;
-		@media (max-height: 1180px) {
-			width: 18.644vh;
-			top: 6.356vh;
-			left: 6.78vh;
-		}
+		width: 57%;
+		top: 14.94%;
+		left: 20.73%;
 	}
+
 	&__top-window-frame {
 		position: absolute;
 		z-index: 1;
-		width: 295px;
-		top: 57px;
-		left: 44px;
-		@media (max-height: 1180px) {
-			width: 25vh;
-			top: 4.831vh;
-			left: 3.729vh;
-		}
+		width: 76.42%;
+		top: 11.35%;
+		left: 11.4%;
 	}
 
 	&__bottom-frame-image {
 		position: absolute;
 		z-index: 0;
-		width: 335px;
-		left: 25px;
-		top: 35px;
-		@media (max-height: 1180px) {
-			width: 28.390vh;
-			left: 2.119vh;
-			top: 2.966vh;
-		}
+		width: 86.79%;
+		left: 6.48%;
+		top: 6.97%;
 	}
 
 	&__peoples-image {
 		position: absolute;
 		z-index: 0;
-		bottom: 37px;
-		width: 320px;
-		left: 30px;
-		@media (max-height: 1180px) {
-			width: 27.119vh;
-			bottom: 3.136vh;
-			left: 2.542vh;
-		}
+		bottom: 7.37%;
+		width: 82.9%;
+		left: 7.77%;
 	}
 
 	&__shining-bottom-image {
 		position: absolute;
 		z-index: 1;
-		width: 314px;
-		left: 35px;
-		bottom: 48px;
+		width: 81.35%;
+		left: 9.07%;
+		bottom: 9.56%;
 		opacity: 0.5;
-		@media (max-height: 1180px) {
-			width: 26.695vh;
-			left: 2.966vh;
-			bottom: 4.068vh;
-		}
 	}
 
 	&__shining-top-image {
 		position: absolute;
 		z-index: 2;
-		width: 220px;
-		left: 82px;
-		top: 88px;
-		@media (max-height: 1180px) {
-			width: 18.644vh;
-			left: 6.949vh;
-			top: 7.458vh;
-		}
+		width: 57%;
+		left: 21.24%;
+		top: 17.53%;
 	}
 
 	&__window-top-bg {
 		position: absolute;
 		z-index: 1;
-		width: 260px;
-		left: 61px;
-		top: 40px;
-		height: 180px;
-		@media (max-height: 1180px) {
-			width: 22.034vh;
-			left: 5.169vh;
-			top: 3.390vh;
-			height: 15.254vh;
-		}
+		width: 67.36%;
+		left: 15.8%;
+		top: 7.97%;
+		height: 35.86%;
 	}
 
 	&__window-lamp {
 		position: absolute;
 		z-index: 0;
-		width: 45px;
-		left: 165px;
-		top: 220px;
-		@media (max-height: 1180px) {
-			width: 3.814vh;
-			left: 13.983vh;
-			top: 18.644vh;
-		}
+		width: 11.66%;
+		left: 42.74%;
+		top: 43.82%;
 	}
+
 	&__top-window-light {
 		position: absolute;
-		width: 335px;
-		left: 23px;
-		top: 0px;
+		width: 86.79%;
+		left: 5.96%;
+		top: 0;
 		z-index: -1;
 		opacity: 0;
-		@media (max-height: 1180px) {
-			width: 28.390vh;
-			left: 1.949vh;
-			top: 0vh;
-		}
 	}
-	
+
 	&__center-window-light {
 		position: absolute;
-		width: 250px;
-		left: 65px;
-		top: 75px;
+		width: 64.77%;
+		left: 16.84%;
+		top: 14.94%;
 		z-index: 1;
 		opacity: 0;
-		@media (max-height: 1180px) {
-			width: 21.186vh;
-			left: 5.508vh;
-			top: 6.356vh;
-		}
 	}
 
 	&__window-top-small-bg {
 		position: absolute;
-		width: 265px;
-		left: 58.5px;
-		top: 68px;
+		width: 68.65%;
+		left: 15.15%;
+		top: 13.55%;
 		z-index: 2;
 		opacity: 1;
-		@media (max-height: 1180px) {
-			width: 22.458vh;
-			left: 4.958vh;
-			top: 5.763vh;
-		}
 	}
-	
+
 	&__bottom-window-light {
 		position: absolute;
-		width: 320px;
-		left: 30px;
-		bottom: 40px;
+		width: 82.9%;
+		left: 7.77%;
+		bottom: 7.97%;
 		z-index: -1;
 		opacity: 0;
-		@media (max-height: 1180px) {
-			width: 27.119vh;
-			left: 2.542vh;
-			bottom: 3.390vh;
-		}
 	}
-	
 }
+
+

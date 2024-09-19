@@ -1,11 +1,10 @@
 .door-glass-wrapper {
-	//background-color: rgba($color: blueviolet, $alpha: 0.4);
-	position: absolute; /* Позиционирование внутри родителя */
-	top: 325px; /* Позиция от левого края родителя */
+	position: absolute; 
+	top: 325px; 
 	left: 366.5px;
 	width: 360px;
 	height: 800px;
-	transition: left 0.5s ease; /* Анимация для плавного движения */
+	transition: left 0.5s ease;
 	overflow: hidden;
 	@media (max-height:	1180px){
 		width: 30.6vh;
@@ -65,6 +64,7 @@
 		width: 170px;
 		height: 284px;
 		overflow: hidden;
+		background-color: rgba($color: orange, $alpha: 0.2);
 		@media (max-height:	1180px){
 			top: 18.305vh;
 			left: 14.831vh;

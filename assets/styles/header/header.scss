@@ -273,7 +273,7 @@
 }
 
 
-
+// ----------------------------- Блок с фоном
 .header-background {
 	height: 100vh;
 	display: flex;
@@ -283,6 +283,9 @@
 	@media (max-width: 1920px){
 		width: 100vw;
 	}
+	@media (max-width: 768px){
+		margin-right: -70px;
+	}
 	&__bg-image {
 		max-width: 1920px;
 		height: 1180px;
@@ -290,9 +293,6 @@
 		width: auto;
 		object-fit: scale-down;
 		margin-bottom: -5px;
-		// box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
-		// -webkit-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
-		// -moz-box-shadow: -3px 46px 38px -12px rgba(0,0,0,0.75);
 		@media (max-height: 1180px){
 			height: 100vh;
 		}
@@ -309,6 +309,9 @@
 	align-items: end;
 	overflow: hidden;
 	margin-bottom: -5px;
+	@media (max-width: 768px){
+		margin-right: -70px;
+	}
 	&__wrapper {
 		position: relative;
 		max-width: 1868px;
@@ -330,6 +333,9 @@
 	align-items: end;
 	overflow: hidden;
 	margin-bottom: -5px;
+	@media (max-width: 768px){
+		margin-right: -70px;
+	}
 	&__wrapper {
 		position: relative;
 		max-width: 1868px;
@@ -380,6 +386,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	display: none;
 	@media (max-height: 1180px){
 		left: 62.19vh;
 		top: 38.983vh;
@@ -394,6 +401,11 @@
 		flex-direction: column;
 		align-items: center;
 		gap: 20px;
+		@media (max-height: 1180px){
+			gap: 1.2vw;
+			padding: 1vw;
+		}
+		
 	}
 	&__title-container {
 		display: flex;
@@ -404,12 +416,18 @@
 		font-size: 48px;
 		font-family: $decorFont;
 		color: #FAF6D2;
+		@media (max-height: 1180px){
+			font-size: 3vw;
+		}
 	}
 	&__bottom-title {
 		font-size: 36px;
 		font-family: $mainFont;
 		color: #FAF6D2;
 		margin-top: -7px;
+		@media (max-height: 1180px){
+			font-size: 2vw;
+		}
 	}
 	&__inputs-wrapper {
 		width: 100%;
@@ -434,10 +452,37 @@
 		}
 	}
 	&__input {
-		max-width: 100px;
 		color: #FAF6D2;
 		font-size: 16px;
 		background-color: transparent;
+		outline: none;
+		@media (max-height: 1180px){
+			font-size: 1.356vh;
+		}
+	}
+	&__date-input {
+		max-width: 115px;
+	}
+	&__time-input {
+		max-width: 60px;
+	}
+	&__users-input-wrapper {
+	}
+	&__users-input {
+		width: 25px;
+		color: #FAF6D2;
+		border: 1px solid transparent;
+		border-radius: 3px;
+		padding: 0px 2px;
+		&:focus {
+			border: 1px solid #FFFFFF;
+		}
+	}
+	&__email-input {
+
+	}
+	&__name-input {
+
 	}
 	&__book-button {
 		display: flex;
