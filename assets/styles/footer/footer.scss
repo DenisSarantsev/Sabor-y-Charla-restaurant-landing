@@ -287,6 +287,9 @@
 		border-bottom: 1px solid $mainFontColor;
 		display: flex;
 		align-items: center;
+		@media (max-width: 768px){
+			padding-bottom: 4px;
+		}
 	}
 	&__input-title {
 		font-size: 16px;
@@ -373,3 +376,37 @@
 	}
 }
 
+.date-wrapper {
+	& input {
+		max-width: 120px;
+	}
+	
+}
+.time-wrapper {
+	& input {
+		max-width: 60px;
+	}
+}
+.clients-wrapper {
+	& input {
+		border: 1px solid transparent;
+		padding: 0 5px;
+		margin-right: 5px;
+		&:focus {
+			border-radius: 3px;
+			border: 1px solid rgba($color: #000000, $alpha: 0.4);
+		}
+	}
+}
+
+.text-input-wrapper {
+	& input {
+		border: 1px solid transparent;
+		padding: 0 5px;
+		margin-right: 5px;
+		&:focus {
+			border-radius: 3px;
+			border: 1px solid rgba($color: #000000, $alpha: 0.4);
+		}
+	}
+}
