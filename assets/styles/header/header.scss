@@ -340,7 +340,7 @@
 // ----------------------------- Блок с движущимися элементами
 .header-interactive {
 	max-width: 1920px;
-	width: 100%;
+	width: auto;
 	min-height: 100%;
 	position: absolute;
 	display: flex;
@@ -380,7 +380,7 @@
 
 .header-static {
 	max-width: 1920px;
-	width: 100%;
+	width: auto;
 	min-height: 100%;
 	position: absolute;
 	display: flex;
