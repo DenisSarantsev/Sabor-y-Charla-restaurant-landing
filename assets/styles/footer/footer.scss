@@ -378,13 +378,19 @@
 
 .date-wrapper {
 	& input {
-		max-width: 120px;
+		font-size: 13px;
+		max-width: 100px;
+		margin-right: 1.5px;
+		color: #000;
+		filter: invert(13%) sepia(21%) saturate(1716%) hue-rotate(358deg) brightness(90%) contrast(94%);
 	}
-	
 }
 .time-wrapper {
 	& input {
-		max-width: 60px;
+		font-size: 13px;
+		max-width: 50px;
+		color: #000;
+		filter: invert(13%) sepia(21%) saturate(1716%) hue-rotate(358deg) brightness(90%) contrast(94%);
 	}
 }
 .clients-wrapper {
@@ -392,10 +398,14 @@
 		border: 1px solid transparent;
 		padding: 0 5px;
 		margin-right: 5px;
-		&:focus {
-			border-radius: 3px;
-			border: 1px solid rgba($color: #000000, $alpha: 0.4);
-		}
+		width: 100%;
+		// &:focus {
+		// 	border-radius: 3px;
+		// 	border: 1px solid rgba($color: #000000, $alpha: 0.4);
+		// }
+	}
+	& img {
+		margin-right: 2px;
 	}
 }
 
@@ -404,9 +414,9 @@
 		border: 1px solid transparent;
 		padding: 0 5px;
 		margin-right: 5px;
-		&:focus {
-			border-radius: 3px;
-			border: 1px solid rgba($color: #000000, $alpha: 0.4);
-		}
+		// &:focus {
+		// 	border-radius: 3px;
+		// 	border: 1px solid rgba($color: #000000, $alpha: 0.4);
+		// }
 	}
 }
