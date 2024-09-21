@@ -14,7 +14,6 @@
 	background: linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(56,56,56,1) 83%);
 	@media (max-width: 768px){
 		margin-top: -10px;
-		width: 100vw;
 	}
 	&__container {
 		height: 100vh;
@@ -341,7 +340,7 @@
 // ----------------------------- Блок с движущимися элементами
 .header-interactive {
 	max-width: 1920px;
-	width: auto;
+	width: 1920px;
 	min-height: 100%;
 	position: absolute;
 	display: flex;
