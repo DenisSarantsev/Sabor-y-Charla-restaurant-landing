@@ -297,7 +297,8 @@
 	display: flex;
 	justify-content: center;
 	align-items: end;
-	width: 1920px;
+	max-width: 1920px;
+	width: 100%;
 	@media (max-width: 1920px){
 		width: 100vw;
 	}
@@ -338,7 +339,8 @@
 
 // ----------------------------- Блок с движущимися элементами
 .header-interactive {
-	width: 1920px;
+	max-width: 1920px;
+	width: 100%;
 	min-height: 100%;
 	position: absolute;
 	display: flex;
@@ -377,7 +379,8 @@
 }
 
 .header-static {
-	width: 1920px;
+	max-width: 1920px;
+	width: 100%;
 	min-height: 100%;
 	position: absolute;
 	display: flex;
