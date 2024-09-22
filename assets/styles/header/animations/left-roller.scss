@@ -11,6 +11,13 @@
 		left: 30.8vh;
 		top: 27.5vh;
 		height: 68vh;
+		@media (max-width: 768px){
+			position: relative;
+			// left: 2.3vh;
+			// top: 34vh;
+			// width: 30.6vh;
+			// height: 68vh;
+		}
 	}
 	&__left-roller-bg {
 		background-color: #000;
@@ -23,7 +30,7 @@
 		flex-direction: column;
 		gap: 7px;
 		z-index: 5;
-		animation: showLeftRoller 7s ease-in-out 3.2s forwards;
+		//animation: showLeftRoller 7s ease-in-out 3.2s forwards;
 		@media (max-height: 1180px){
 			gap: 0.593vh;
 		}

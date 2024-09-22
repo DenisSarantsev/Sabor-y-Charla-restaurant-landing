@@ -14,6 +14,8 @@
 	background: linear-gradient(180deg, rgba(102,102,102,1) 0%, rgba(56,56,56,1) 83%);
 	@media (max-width: 768px){
 		margin-top: -10px;
+		max-height: 100%;
+		height: 100%;
 	}
 	&__container {
 		height: 100vh;
@@ -23,6 +25,10 @@
 		justify-content: center;
 		align-items: end;
 		z-index: 5;
+		@media (max-width: 768px){
+			height: 900px;
+			width: 100vw;;
+		}
 	}
 	&__deep-bg {
 		position: absolute;
@@ -32,6 +38,9 @@
 		height: 100%;
 		z-index: 1;
 		object-fit: cover;
+		@media (max-width: 768px){
+			display: none;
+		}
 	}
 	&__deep-bg-filter {
 		position: absolute;
@@ -42,6 +51,9 @@
 		z-index: 3;
 		background: rgb(102,102,102);
 		background: linear-gradient(180deg, rgba(102,102,102,0.5) 0%, rgba(0,0,0,0) 83%);
+		@media (max-width: 768px){
+			display: none;
+		}
 	}
 	&__sidewalk-bg {
 		position: relative;
@@ -59,6 +71,7 @@
 		}
 		@media (max-width: 768px){
 			height: 100px;
+			display: none;
 		}
 		@media (max-width: 500px){
 			height: 70px;
@@ -299,29 +312,12 @@
 	align-items: end;
 	max-width: 1920px;
 	width: 100%;
+	overflow: hidden;
 	@media (max-width: 1920px){
 		width: 100vw;
 	}
 	@media (max-width: 768px){
-		margin-right: -70px;
-		@media (max-height: 900px){
-			margin-right: -80px;
-		}
-		@media (max-height: 800px){
-			margin-right: -70px;
-		}
-		@media (max-height: 700px){
-			margin-right: -60px;
-		}
-		@media (max-height: 600px){
-			margin-right: -50px;
-		}
-		@media (max-height: 500px){
-			margin-right: -35px;
-		}
-		@media (max-height: 400px){
-			margin-right: -27px;
-		}
+		width: 768px;
 	}
 
 	&__bg-image {
@@ -334,6 +330,52 @@
 		@media (max-height: 1180px){
 			height: 100vh;
 		}
+		@media (max-width: 768px){
+			display: none;
+		}
+	}
+	&__mobile-dark-image {
+		display: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		@media (max-width: 768px){
+			display: block;
+			height: 900px;
+			width: 768px;
+			animation: hiddenMobileBG 0s ease 9s forwards;
+		}
+	}
+	&__mobile-light-image {
+		opacity: 0;
+		position: absolute;
+		top: 0;
+		@media (max-width: 768px){
+			top: 0.7px;
+			height: 900px;
+			width: 101.5%;
+			left: -4.9px;
+			object-fit: cover;
+			animation: showMobileBG 0s ease 9s forwards;
+		}
+	}
+}
+
+@keyframes hiddenMobileBG {
+	from {
+		display: block;
+	}
+	to {
+		display: none;
+	}
+}
+
+@keyframes showMobileBG {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
 	}
 }
 
@@ -349,21 +391,12 @@
 	overflow: hidden;
 	margin-bottom: -5px;
 	@media (max-width: 768px){
-		margin-right: -70px;
-		@media (max-height: 800px){
-			margin-right: -70px;
-		}
-		@media (max-height: 700px){
-			margin-right: -60px;
-		}
-		@media (max-height: 600px){
-			margin-right: -50px;
-		}
-		@media (max-height: 500px){
-			margin-right: -35px;
-		}
-		@media (max-height: 400px){
-			margin-right: -27px;
+		@media (max-height: 900px){
+			height: 100%;
+			width: 768px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 	&__wrapper {
@@ -374,6 +407,9 @@
 		@media (max-height: 1180px){
 			width: 158vh;
 			height: 100vh;
+			@media (max-width: 768px){
+				width: 768px;
+			}
 		}
 	}
 }
@@ -389,28 +425,13 @@
 	overflow: hidden;
 	margin-bottom: -5px;
 	@media (max-width: 768px){
-		margin-right: -70px;
-		@media (max-height: 800px){
-			margin-right: -70px;
-		}
-		@media (max-height: 700px){
-			margin-right: -60px;
-		}
-		@media (max-height: 600px){
-			margin-right: -50px;
-		}
-		@media (max-height: 500px){
-			margin-right: -35px;
-		}
-		@media (max-height: 400px){
-			margin-right: -27px;
-		}
+		display: none;
 	}
 	&__wrapper {
 		position: relative;
 		max-width: 1868px;
 		height: 1180px;
-		width: 100%;
+		width: 180vh;
 		@media (max-height: 1180px){
 			width: 158vh;
 			height: 100vh;
@@ -435,13 +456,13 @@
 			top: 1.949vh;
 			width: 129.915vh;
 			height: 16.61vh;
+			@media (max-width: 768px){
+				height: 32vw;
+				top: 3.3vw;
+			}
 			& img {
-				max-width: 36.441vh;
-				@media (max-width: 500px){
-					max-width: 30vh;
-				}
-				@media (max-width: 400px){
-					max-width: 25vh;
+				@media (max-width: 768px){
+					max-width: 55vw;
 				}
 			}
 		}
@@ -461,6 +482,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	display: none;
 	@media (max-height: 1180px){
 		left: 62.19vh;
 		top: 38.983vh;
