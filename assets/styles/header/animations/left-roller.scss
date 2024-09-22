@@ -13,10 +13,10 @@
 		height: 68vh;
 		@media (max-width: 768px){
 			position: relative;
-			// left: 2.3vh;
-			// top: 34vh;
-			// width: 30.6vh;
-			// height: 68vh;
+			left: -28vh;
+			top: 33vh;
+			width: calc(20vw + 30.2vh);
+			height: 100vh;
 		}
 	}
 	&__left-roller-bg {
@@ -30,7 +30,7 @@
 		flex-direction: column;
 		gap: 7px;
 		z-index: 5;
-		//animation: showLeftRoller 7s ease-in-out 3.2s forwards;
+		animation: showLeftRoller 7s ease-in-out 3.2s forwards;
 		@media (max-height: 1180px){
 			gap: 0.593vh;
 		}
@@ -39,6 +39,16 @@
 		}		
 		@media (max-height: 900px){
 			gap: 0.1vh;
+		}
+		@media (max-width: 768px){
+			height: 80vh;
+			gap: 0.5vh;
+			top: -10px;
+		}
+		@media (max-width: 390px){
+			height: 90vh;
+			gap: 0.5vh;
+			top: -10px;
 		}
 	}
 	&__left-roller-lamel {
@@ -58,6 +68,10 @@
 		}
 		@media (max-height: 800px){
 			top: -30px;
+		}
+		@media (max-width: 768px){
+			left: -30px;
+			height: 200px;
 		}
 		@media (max-height: 700px){
 			top: -50px;

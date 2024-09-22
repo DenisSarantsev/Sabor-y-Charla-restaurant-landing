@@ -26,8 +26,8 @@
 		align-items: end;
 		z-index: 5;
 		@media (max-width: 768px){
-			height: 900px;
-			width: 100vw;;
+			height: 100vh;
+			width: 100vw;
 		}
 	}
 	&__deep-bg {
@@ -313,11 +313,13 @@
 	max-width: 1920px;
 	width: 100%;
 	overflow: hidden;
+	
 	@media (max-width: 1920px){
 		width: 100vw;
 	}
 	@media (max-width: 768px){
 		width: 768px;
+		position: relative;
 	}
 
 	&__bg-image {
@@ -334,15 +336,75 @@
 			display: none;
 		}
 	}
+	&__mobile-top-horisontal-line {
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		@media (max-width: 768px){
+			display: block;
+			top: 17%;
+			width: 100%;
+			height: 3%;
+			z-index: 7;
+		}
+	}
+	&__mobile-bottom-horisontal-line {
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		@media (max-width: 768px){
+			display: block;
+			top: 25%;
+			width: 100%;
+			height: 2%;
+			z-index: 7;
+		}
+	}
+	&__mobile-horisontal-column {
+		display: none;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		@media (max-width: 768px){
+			display: block;
+			top: 17%;
+			width: 100%;
+			height: 11%;
+			z-index: 6;
+		}
+	}
+	&__mobile-column {
+		display: none;
+		position: absolute;
+		bottom: 0;
+		left: 16vw;
+		@media (max-width: 768px){
+			display: block;
+			width: 71%;
+			height: 90%;
+			margin-bottom: -27.2%;
+			z-index: 5;
+		}
+		@media (max-width: 340px){
+			display: block;
+			width: 70%;
+			height: 90%;
+			margin-bottom: -24.2%;
+			z-index: 5;
+		}
+	}
 	&__mobile-dark-image {
 		display: none;
 		position: absolute;
 		top: 0;
-		left: 0;
+		left: 4px;
 		@media (max-width: 768px){
 			display: block;
-			height: 900px;
-			width: 768px;
+			height: 100%;
+			width: 105%;
+			left: -1px;
 			animation: hiddenMobileBG 0s ease 9s forwards;
 		}
 	}
@@ -352,10 +414,10 @@
 		top: 0;
 		@media (max-width: 768px){
 			top: 0.7px;
-			height: 900px;
-			width: 101.5%;
-			left: -4.9px;
-			object-fit: cover;
+			height: 100%;
+			width: 105%;
+			left: -5px;
+			// object-fit: cover;
 			animation: showMobileBG 0s ease 9s forwards;
 		}
 	}
@@ -393,10 +455,11 @@
 	@media (max-width: 768px){
 		@media (max-height: 900px){
 			height: 100%;
-			width: 768px;
+			width: 100%;
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			object-fit: cover;
 		}
 	}
 	&__wrapper {
@@ -408,7 +471,8 @@
 			width: 158vh;
 			height: 100vh;
 			@media (max-width: 768px){
-				width: 768px;
+				width: 100vw;
+				height: 100vh;
 			}
 		}
 	}

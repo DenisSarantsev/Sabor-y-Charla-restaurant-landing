@@ -13,6 +13,14 @@
 		left: 89.322vh;
 		top: 25.847vh;
 		height: 44.068vh;
+		@media (max-width: 768px){
+			position: relative;
+			left: 80vw;
+			top: -69vh;
+			width: calc(20vw + 30.2vh);
+			height: 82vh;
+			z-index: 5;
+		}
 	}
 	&__background {
 		position: absolute;
@@ -29,6 +37,9 @@
 			animation: showRightRollerSmallHeight 6s ease-in-out 2s forwards;
 			gap: 0.6vh;
 			top: -3.22vh;
+			@media (max-width: 768px){
+				height: 67%;
+			}
 		}
 	}
 	&__lamel {
