@@ -1,9 +1,13 @@
 .sabor-y-charla {
 	background-color: $mainBgColor;
+	margin-top: 100px;
 	border-top: 10px solid #383838;
 	box-shadow: -3px 46px 45px -49px rgba(0,0,0,0.75) inset;
 	-webkit-box-shadow: -3px 46px 45px -49px rgba(0,0,0,0.75) inset;
 	-moz-box-shadow: -3px 46px 45px -49px rgba(0,0,0,0.75) inset;
+	@media (max-width: 768px){
+		margin-top: 0px;
+	}
 	&__container {
 		display: flex;
 		flex-direction: column;
