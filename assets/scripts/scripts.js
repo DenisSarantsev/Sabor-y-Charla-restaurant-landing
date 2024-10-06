@@ -21,9 +21,9 @@ document.addEventListener("DOMContentLoaded", () => {
 	// ------------------------------------------------- Скачивание файлов меню
 	if ( document.querySelector('.nav-menu__download-nav-button') ) {
 		const files = [
-			{ filename: 'main-menu.pdf', path: '/public/files/main-menu.pdf' },
-			{ filename: 'cocteles.pdf', path: '/public/files/cocteles.pdf' },
-			{ filename: 'tapas.pdf', path: '/public/files/tapas.pdf' }
+			{ filename: 'main-menu.pdf', path: 'files/main-menu.pdf' },
+			{ filename: 'cocteles.pdf', path: 'files/cocteles.pdf' },
+			{ filename: 'tapas.pdf', path: 'files/tapas.pdf' }
 		];
 		document.querySelector('.nav-menu__download-nav-button').addEventListener('click', function() {
 			files.forEach(file => {
@@ -36,6 +36,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			});
 		});
 	}
+	// ------------------------------------------------- Отправка заявок в телеграм
+	
 
 
 	
