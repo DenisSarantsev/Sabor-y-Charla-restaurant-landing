@@ -188,16 +188,52 @@
 	display: flex;
 	justify-content: center;
 	gap: 18px;
-	padding: 0 0 0 0;
+	padding: 200px 0 0 0;
+	@media (max-width: 1920px){
+		padding: 10vw 0 0 0;
+	}
+	@media (max-width: 1600px){
+		padding: 7vw 0 0 0;
+	}
+	@media (max-width: 1400px){
+		padding: 5vw 0 0 0;
+	}
+	@media (max-width: 1400px){
+		padding: 12vw 0 0 0;
+	}
+	@media (max-width: 1100px){
+		padding: 7vw 0 0 0;
+	}
+	@media (max-width: 992px){
+		padding: 19vw 0 0 0;
+	}
+	@media (max-width: 900px){
+		padding: 15vw 0 0 0;
+	}
+	@media (max-width: 800px){
+		padding: 12vw 0 0 0;
+	}
+	@media (max-width: 700px){
+		padding: 9vw 0 0 0;
+	}
+	@media (max-width: 650px){
+		padding: 73vw 0 0 0;
+	}
+	@media (max-width: 500px){
+		padding: 45vw 0 0 0;
+	}
 	@media (max-width: 500px){
 		gap: 10px;
 		margin-top: -30px;
 	}
-	@media (max-width: 400px){
-		margin-top: -80px;
+	@media (max-width: 450px){
+		padding: 35vw 0 0 0;
 	}
-	@media (max-width: 350px){
-		margin-top: -100px;
+	@media (max-width: 400px){
+		padding: 25vw 0 0 0;
+	}
+	@media (max-width: 320px){
+		padding: 15vw 0 0 0;
 	}
 }
 .my-custom-second-bullet {
@@ -240,7 +276,6 @@
   flex-direction: row;
   width: 100%;
   overflow: visible; /* Слайды могут выходить за пределы */
-	padding-bottom: 130px;
 }
 .second-swiper-slide {
 	width: 370px;
@@ -291,5 +326,7 @@
 			font-size: 17px;
 			padding: 10px 5px;
 		}
+	}
+	&__wrapper {
 	}
 }

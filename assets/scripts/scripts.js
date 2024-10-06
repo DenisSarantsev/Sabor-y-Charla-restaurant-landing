@@ -37,10 +37,31 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	}
 	// ------------------------------------------------- Отправка заявок в телеграм
-	
+	// Отправка заявки с десктопной формы в шапке
+	if ( document.querySelector(".header-desktop-form-button") ) {
+		const headerFormButton = document.querySelector(".header-desktop-form-button");
+		headerFormButton.addEventListener("click", () => {
+			createOrderMessage("header-desktop-form")
+		})
+	}
+	// Отправка заявки с мобильной формы в шапке
+	if ( document.querySelector(".header-mobile-form-button") ) {
+		const headerFormButton = document.querySelector(".header-mobile-form-button");
+		headerFormButton.addEventListener("click", () => {
+			createOrderMessage("header-mobile-form")
+		})
+	}
+	// Отправка заявки с мобильной формы в футере
+	if ( document.querySelector(".footer-form-button") ) {
+		const headerFormButton = document.querySelector(".footer-form-button");
+		headerFormButton.addEventListener("click", () => {
+			createOrderMessage("footer-form")
+		})
+	}
 
 
 	
+
 })
 
 
@@ -64,4 +85,56 @@ const scrollToElement = (scrollButton, targetElement) => {
 	});
 }
 
+// ------------------------------------------- Fetch запрос для отправки заявки в бот
+const postOrderToBot = (uri, chatId, message) => {
+	fetch(uri, {
+			method: 'POST', // Необходимо указать строку 'POST', а не переменную
+			headers: {
+					'Content-Type': 'application/json', // Указываем тип контента
+			},
+			body: JSON.stringify({
+					chat_id: chatId,
+					parse_mode: 'html',
+					text: message,
+			})
+	})
+	.then(response => {
+			if (!response.ok) {
+					throw new Error('Network response was not ok');
+			}
+			return response.json();
+	})
+	.then(data => {
+			console.log('Message sent to bot:', data);
+	})
+	.catch(error => {
+			console.error('Error sending message to bot:', error);
+	});
+};
 
+// ------------------------------------------- Данные для отправки
+const TOKEN = "7230574363:AAFrpTu75QCtY0HIf33MLfEuo9boVnVQYqs";
+const CHAT_ID = "-1002485999607";
+const URI_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`;
+
+// ------------------------------------------- Функция для формирования сообщения
+const createOrderMessage = (formType) => {
+	const date = document.querySelector(`.${formType}-date`);
+		const time = document.querySelector(`.${formType}-time`);
+		const users = document.querySelector(`.${formType}-users`);
+		const email = document.querySelector(`.${formType}-email`);
+		const phone = document.querySelector(`.${formType}-phone`);
+		const message = `
+			New order
+			Date: ${date.value}
+			Time: ${time.value}
+			Visitors: ${users.value}
+			Email: ${email.value}
+			Phone: ${phone.value}
+		`
+		if ( date.value.length < 1 || time.value.length < 1 || users.value.length < 1 || email.value.length < 1 || phone.value.length < 1 ) {
+			console.log("no validate")
+		} else {
+			postOrderToBot(URI_API, CHAT_ID, message)
+		}
+}

@@ -7,6 +7,12 @@
     <title>SYC - SABOR Y CHARLA</title>
   </head>
   <body>
+		<audio id="background-music">
+			<source src="/public/files/audio.m4a" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		<div id="play-button-music"></div>
+
 		<header class="header section-block">
 			<img class="header__sidewalk-bg" src="/public/img/common/header/sidewalk-bg.jpg" alt="">
 			<img class="header__deep-bg" src="/public/img/common/header/madrid-bg.jpg" alt="">
@@ -94,31 +100,31 @@
 								<div class="header-form__inputs-wrapper">
 									<div class="header-form__inputs-item">
 										<div class="header-form__input-title">Elige la fecha</div>
-										<input type="date" placeholder="15/09/24" class="header-form__input header-form__date-input"/>
+										<input type="date" placeholder="15/09/24" class="header-form__input header-form__date-input header-mobile-form-date"/>
 										<!-- <img src="/public/img/common/other/form-calendar.svg" alt="calendar icon"> -->
 									</div>
 									<div class="header-form__inputs-item">
 										<div class="header-form__input-title">Elige la hora</div>
-										<input type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input"/>
+										<input type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input header-mobile-form-time"/>
 										<!-- <img src="/public/img/common/other/form-timer.svg" alt="timer icon"> -->
 									</div>
 									<div class="header-form__inputs-item how-much-people-item">
 										<div class="header-form__input-title">¿Cuánta gente?</div>
 										<div class="header-form__users-input-wrapper">
-											<input placeholder="0" class="header-form__input header-form__users-input"/>
+											<input placeholder="0" class="header-form__input header-form__users-input header-mobile-form-users"/>
 											<img src="/public/img/common/other/form-user.svg" alt="user icon">
 											</div>
 									</div>
 									<div class="header-form__inputs-item">
 										<div class="header-form__input-title">Tu correo electrónico</div>
-										<input type="email" class="header-form__input header-form__email-input"/>
+										<input type="email" class="header-form__input header-form__email-input header-mobile-form-email"/>
 									</div>
 									<div class="header-form__inputs-item">
 										<div class="header-form__input-title">Su nombre</div>
-										<input type="text" class="header-form__input header-form__name-input"/>
+										<input type="text" class="header-form__input header-form__name-input header-mobile-form-phone"/>
 									</div>
 								</div>
-								<div class="header-form__book-button">
+								<div class="header-form__book-button header-mobile-form-button">
 									<div class="header-form__book-button-text">RESERVAR</div>
 									<div class="header-form__book-button-arrow-wrapper">
 										<img src="/public/img/common/other/arrow.svg" alt="arrow">
@@ -177,31 +183,31 @@
 									<div class="header-form__inputs-wrapper">
 										<div class="header-form__inputs-item">
 											<div class="header-form__input-title">Elige la fecha</div>
-											<input type="date" placeholder="15/09/24" class="header-form__input header-form__date-input"/>
+											<input value="" type="date" placeholder="15/09/24" class="header-form__input header-form__date-input header-desktop-form-date"/>
 											<!-- <img src="/public/img/common/other/form-calendar.svg" alt="calendar icon"> -->
 										</div>
 										<div class="header-form__inputs-item">
 											<div class="header-form__input-title">Elige la hora</div>
-											<input type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input"/>
+											<input value="" type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input header-desktop-form-time"/>
 											<!-- <img src="/public/img/common/other/form-timer.svg" alt="timer icon"> -->
 										</div>
 										<div class="header-form__inputs-item how-much-people-item">
 											<div class="header-form__input-title">¿Cuánta gente?</div>
 											<div class="header-form__users-input-wrapper">
-												<input placeholder="0" class="header-form__input header-form__users-input"/>
+												<input value="" placeholder="0" class="header-form__input header-form__users-input header-desktop-form-users"/>
 												<img src="/public/img/common/other/form-user.svg" alt="user icon">
 												</div>
 										</div>
 										<div class="header-form__inputs-item">
 											<div class="header-form__input-title">Tu correo electrónico</div>
-											<input type="email" class="header-form__input header-form__email-input"/>
+											<input value="" type="email" class="header-form__input header-form__email-input header-desktop-form-email"/>
 										</div>
 										<div class="header-form__inputs-item">
 											<div class="header-form__input-title">Su nombre</div>
-											<input type="text" class="header-form__input header-form__name-input"/>
+											<input value="" type="text" class="header-form__input header-form__name-input header-desktop-form-phone"/>
 										</div>
 									</div>
-									<div class="header-form__book-button">
+									<div class="header-form__book-button header-desktop-form-button">
 										<div class="header-form__book-button-text">RESERVAR</div>
 										<div class="header-form__book-button-arrow-wrapper">
 											<img src="/public/img/common/other/arrow.svg" alt="arrow">
@@ -321,14 +327,46 @@
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 							<!-- Slides -->
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide3.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide3.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide2.jpg" alt=""></div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide2.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide3.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide2.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide3.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide2.jpg" alt="">
+								</div>
+							</div>
 						</div>
 						<!-- If we need pagination -->
 						<div class="swiper-pagination-wrapper">
@@ -354,16 +392,66 @@
 							<!-- Additional required wrapper -->
 							<div class="second-swiper-wrapper">
 								<!-- Slides -->
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des1.png" alt=""><button>Tortilla de patata</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des2.png" alt=""><button>Huevos ruveltos</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des3.png" alt=""><button>Omelette Pular</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des4.png" alt=""><button>Huevo en pan</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des5.png" alt=""><button>Omelette en pimiento</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des1.png" alt=""><button>Tortilla de patata</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des2.png" alt=""><button>Huevos ruveltos</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des3.png" alt=""><button>Omelette Pular</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des4.png" alt=""><button>Huevo en pan</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des5.png" alt=""><button>Omelette en pimiento</button></div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des1.png" alt="">
+										<button>Tortilla de patata</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des2.png" alt="">
+										<button>Huevos ruveltos</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des3.png" alt="">
+										<button>Omelette Pular</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des4.png" alt="">
+										<button>Huevo en pan</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des5.png" alt="">
+										<button>Omelette en pimiento</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des1.png" alt="">
+										<button>Tortilla de patata</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des2.png" alt="">
+										<button>Huevos ruveltos</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des3.png" alt="">
+										<button>Omelette Pular</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des4.png" alt="">
+										<button>Huevo en pan</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des5.png" alt="">
+										<button>Omelette en pimiento</button>
+									</div>
+								</div>
 							</div>
 							<!-- If we need pagination -->
 							<div class="second-swiper-pagination-wrapper">
@@ -637,29 +725,29 @@
 										<div class="footer-form__inputs-container">
 											<div class="footer-form__input-wrapper date-wrapper">
 												<div class="footer-form__input-title">Elige la fecha</div>
-												<input type="date" class="footer-form__input-input">
+												<input type="date" class="footer-form__input-input footer-form-date">
 												<!-- <img src="" alt="" class="footer-form__input-icon"> -->
 											</div>
 											<div class="footer-form__input-wrapper time-wrapper">
 												<div class="footer-form__input-title">Elige la hora</div>
-												<input type="time" class="footer-form__input-input">
+												<input type="time" class="footer-form__input-input footer-form-time">
 												<!-- <img src="" alt="" class="footer-form__input-icon"> -->
 											</div>
 											<div class="footer-form__input-wrapper clients-wrapper">
 												<div class="footer-form__input-title">¿Cuánta gente?</div>
-												<input class="footer-form__input-input">
+												<input class="footer-form__input-input footer-form-users">
 												<img src="/public/img/common/other/user-brown.svg" alt="" class="footer-form__input-icon">
 											</div>
 											<div class="footer-form__input-wrapper text-input-wrapper">
 												<div class="footer-form__input-title">Tu correo electrónico</div>
-												<input class="footer-form__input-input">
+												<input class="footer-form__input-input footer-form-email">
 											</div>
 											<div class="footer-form__input-wrapper text-input-wrapper">
 												<div class="footer-form__input-title">Su nombre</div>
-												<input class="footer-form__input-input">
+												<input class="footer-form__input-input footer-form-phone">
 											</div>
 										</div>
-										<button class="footer-form__book-button">
+										<button class="footer-form__book-button footer-form-button">
 											<div class="footer-form__book-button-text">RESERVAR</div>
 											<div class="footer-form__book-button-img-wrapper">
 												<img src="/public/img/common/other/arrow.svg" alt="arrow icon">

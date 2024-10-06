@@ -22,5 +22,16 @@
 	}
 	&__slider {
 	}
+	&__slide-wrapper {
+		border-radius: 20px;
+		padding-bottom: 20px;
+		&:hover {
+			cursor: pointer;
+		}
+		& img {
+			object-fit: cover;
+			border-radius: 20px;
+		}
+	}
 }
 

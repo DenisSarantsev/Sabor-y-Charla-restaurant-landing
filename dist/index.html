@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SYC - SABOR Y CHARLA</title>
-    <script type="module" crossorigin src="/Sabor-y-Charla-restaurant-landing/dist/assets/index-BomPWsZL.js"></script>
-    <link rel="stylesheet" crossorigin href="/Sabor-y-Charla-restaurant-landing/dist/assets/index-0Bw9gz4k.css">
+    <script type="module" crossorigin src="/Sabor-y-Charla-restaurant-landing/dist/assets/index-X6tRXM1h.js"></script>
+    <link rel="stylesheet" crossorigin href="/Sabor-y-Charla-restaurant-landing/dist/assets/index-D537oGJO.css">
   </head>
   <body>
+		<audio id="background-music">
+			<source src="/Sabor-y-Charla-restaurant-landing/dist/assets/audio-ppjBVXcW.m4a" type="audio/mpeg">
+			Your browser does not support the audio element.
+		</audio>
+		<div id="play-button-music"></div>
+
 		<header class="header section-block">
 			<img class="header__sidewalk-bg" src="/Sabor-y-Charla-restaurant-landing/dist/assets/sidewalk-bg-tJr58ucU.jpg" alt="">
 			<img class="header__deep-bg" src="/Sabor-y-Charla-restaurant-landing/dist/assets/madrid-bg-BTEBen9A.jpg" alt="">
@@ -95,31 +101,31 @@
 								<div class="header-form__inputs-wrapper">
 									<div class="header-form__inputs-item">
 										<div class="header-form__input-title">Elige la fecha</div>
-										<input type="date" placeholder="15/09/24" class="header-form__input header-form__date-input"/>
+										<input type="date" placeholder="15/09/24" class="header-form__input header-form__date-input header-mobile-form-date"/>
 										<!-- <img src="/public/img/common/other/form-calendar.svg" alt="calendar icon"> -->
 									</div>
 									<div class="header-form__inputs-item">
 										<div class="header-form__input-title">Elige la hora</div>
-										<input type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input"/>
+										<input type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input header-mobile-form-time"/>
 										<!-- <img src="/public/img/common/other/form-timer.svg" alt="timer icon"> -->
 									</div>
 									<div class="header-form__inputs-item how-much-people-item">
 										<div class="header-form__input-title">¿Cuánta gente?</div>
 										<div class="header-form__users-input-wrapper">
-											<input placeholder="0" class="header-form__input header-form__users-input"/>
+											<input placeholder="0" class="header-form__input header-form__users-input header-mobile-form-users"/>
 											<img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.51677%2015.6216C2.44585%2015.8885%202.6047%2016.1623%202.87158%2016.2332C3.13846%2016.3042%203.4123%2016.1453%203.48323%2015.8784L2.51677%2015.6216ZM14.5168%2015.8784C14.5877%2016.1453%2014.8615%2016.3042%2015.1284%2016.2332C15.3953%2016.1623%2015.5542%2015.8885%2015.4832%2015.6216L14.5168%2015.8784ZM3.48323%2015.8784C4.11166%2013.5137%206.33577%2011.75%209%2011.75V10.75C5.89083%2010.75%203.2638%2012.8106%202.51677%2015.6216L3.48323%2015.8784ZM9%2011.75C11.6642%2011.75%2013.8883%2013.5137%2014.5168%2015.8784L15.4832%2015.6216C14.7362%2012.8106%2012.1092%2010.75%209%2010.75V11.75ZM11.5%205.25C11.5%206.63071%2010.3807%207.75%209%207.75V8.75C10.933%208.75%2012.5%207.183%2012.5%205.25H11.5ZM9%207.75C7.61929%207.75%206.5%206.63071%206.5%205.25H5.5C5.5%207.183%207.067%208.75%209%208.75V7.75ZM6.5%205.25C6.5%203.86929%207.61929%202.75%209%202.75V1.75C7.067%201.75%205.5%203.317%205.5%205.25H6.5ZM9%202.75C10.3807%202.75%2011.5%203.86929%2011.5%205.25H12.5C12.5%203.317%2010.933%201.75%209%201.75V2.75Z'%20fill='%23FAF6D2'/%3e%3c/svg%3e" alt="user icon">
 											</div>
 									</div>
 									<div class="header-form__inputs-item">
 										<div class="header-form__input-title">Tu correo electrónico</div>
-										<input type="email" class="header-form__input header-form__email-input"/>
+										<input type="email" class="header-form__input header-form__email-input header-mobile-form-email"/>
 									</div>
 									<div class="header-form__inputs-item">
 										<div class="header-form__input-title">Su nombre</div>
-										<input type="text" class="header-form__input header-form__name-input"/>
+										<input type="text" class="header-form__input header-form__name-input header-mobile-form-phone"/>
 									</div>
 								</div>
-								<div class="header-form__book-button">
+								<div class="header-form__book-button header-mobile-form-button">
 									<div class="header-form__book-button-text">RESERVAR</div>
 									<div class="header-form__book-button-arrow-wrapper">
 										<img src="data:image/svg+xml,%3csvg%20width='26'%20height='8'%20viewBox='0%200%2026%208'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.646446%204.35355C0.451185%204.15829%200.451185%203.84171%200.646446%203.64645L3.82843%200.464466C4.02369%200.269204%204.34027%200.269204%204.53553%200.464466C4.7308%200.659728%204.7308%200.976311%204.53553%201.17157L1.70711%204L4.53553%206.82843C4.7308%207.02369%204.7308%207.34027%204.53553%207.53553C4.34027%207.7308%204.02369%207.7308%203.82843%207.53553L0.646446%204.35355ZM26%204.5H1V3.5H26V4.5Z'%20fill='%2333230A'/%3e%3c/svg%3e" alt="arrow">
@@ -178,31 +184,31 @@
 									<div class="header-form__inputs-wrapper">
 										<div class="header-form__inputs-item">
 											<div class="header-form__input-title">Elige la fecha</div>
-											<input type="date" placeholder="15/09/24" class="header-form__input header-form__date-input"/>
+											<input value="" type="date" placeholder="15/09/24" class="header-form__input header-form__date-input header-desktop-form-date"/>
 											<!-- <img src="/public/img/common/other/form-calendar.svg" alt="calendar icon"> -->
 										</div>
 										<div class="header-form__inputs-item">
 											<div class="header-form__input-title">Elige la hora</div>
-											<input type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input"/>
+											<input value="" type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input header-desktop-form-time"/>
 											<!-- <img src="/public/img/common/other/form-timer.svg" alt="timer icon"> -->
 										</div>
 										<div class="header-form__inputs-item how-much-people-item">
 											<div class="header-form__input-title">¿Cuánta gente?</div>
 											<div class="header-form__users-input-wrapper">
-												<input placeholder="0" class="header-form__input header-form__users-input"/>
+												<input value="" placeholder="0" class="header-form__input header-form__users-input header-desktop-form-users"/>
 												<img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.51677%2015.6216C2.44585%2015.8885%202.6047%2016.1623%202.87158%2016.2332C3.13846%2016.3042%203.4123%2016.1453%203.48323%2015.8784L2.51677%2015.6216ZM14.5168%2015.8784C14.5877%2016.1453%2014.8615%2016.3042%2015.1284%2016.2332C15.3953%2016.1623%2015.5542%2015.8885%2015.4832%2015.6216L14.5168%2015.8784ZM3.48323%2015.8784C4.11166%2013.5137%206.33577%2011.75%209%2011.75V10.75C5.89083%2010.75%203.2638%2012.8106%202.51677%2015.6216L3.48323%2015.8784ZM9%2011.75C11.6642%2011.75%2013.8883%2013.5137%2014.5168%2015.8784L15.4832%2015.6216C14.7362%2012.8106%2012.1092%2010.75%209%2010.75V11.75ZM11.5%205.25C11.5%206.63071%2010.3807%207.75%209%207.75V8.75C10.933%208.75%2012.5%207.183%2012.5%205.25H11.5ZM9%207.75C7.61929%207.75%206.5%206.63071%206.5%205.25H5.5C5.5%207.183%207.067%208.75%209%208.75V7.75ZM6.5%205.25C6.5%203.86929%207.61929%202.75%209%202.75V1.75C7.067%201.75%205.5%203.317%205.5%205.25H6.5ZM9%202.75C10.3807%202.75%2011.5%203.86929%2011.5%205.25H12.5C12.5%203.317%2010.933%201.75%209%201.75V2.75Z'%20fill='%23FAF6D2'/%3e%3c/svg%3e" alt="user icon">
 												</div>
 										</div>
 										<div class="header-form__inputs-item">
 											<div class="header-form__input-title">Tu correo electrónico</div>
-											<input type="email" class="header-form__input header-form__email-input"/>
+											<input value="" type="email" class="header-form__input header-form__email-input header-desktop-form-email"/>
 										</div>
 										<div class="header-form__inputs-item">
 											<div class="header-form__input-title">Su nombre</div>
-											<input type="text" class="header-form__input header-form__name-input"/>
+											<input value="" type="text" class="header-form__input header-form__name-input header-desktop-form-phone"/>
 										</div>
 									</div>
-									<div class="header-form__book-button">
+									<div class="header-form__book-button header-desktop-form-button">
 										<div class="header-form__book-button-text">RESERVAR</div>
 										<div class="header-form__book-button-arrow-wrapper">
 											<img src="data:image/svg+xml,%3csvg%20width='26'%20height='8'%20viewBox='0%200%2026%208'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.646446%204.35355C0.451185%204.15829%200.451185%203.84171%200.646446%203.64645L3.82843%200.464466C4.02369%200.269204%204.34027%200.269204%204.53553%200.464466C4.7308%200.659728%204.7308%200.976311%204.53553%201.17157L1.70711%204L4.53553%206.82843C4.7308%207.02369%204.7308%207.34027%204.53553%207.53553C4.34027%207.7308%204.02369%207.7308%203.82843%207.53553L0.646446%204.35355ZM26%204.5H1V3.5H26V4.5Z'%20fill='%2333230A'/%3e%3c/svg%3e" alt="arrow">
@@ -322,14 +328,46 @@
 						<!-- Additional required wrapper -->
 						<div class="swiper-wrapper">
 							<!-- Slides -->
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide3.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide2.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide3.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide.jpg" alt=""></div>
-							<div class="swiper-slide"><img src="img/home/tapas/tapas-slide2.jpg" alt=""></div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide2.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide3.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide2.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide3.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide.jpg" alt="">
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="swiper-slide__wrapper tapas__slide-wrapper">
+									<img src="img/home/tapas/tapas-slide2.jpg" alt="">
+								</div>
+							</div>
 						</div>
 						<!-- If we need pagination -->
 						<div class="swiper-pagination-wrapper">
@@ -355,16 +393,66 @@
 							<!-- Additional required wrapper -->
 							<div class="second-swiper-wrapper">
 								<!-- Slides -->
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des1.png" alt=""><button>Tortilla de patata</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des2.png" alt=""><button>Huevos ruveltos</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des3.png" alt=""><button>Omelette Pular</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des4.png" alt=""><button>Huevo en pan</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des5.png" alt=""><button>Omelette en pimiento</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des1.png" alt=""><button>Tortilla de patata</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des2.png" alt=""><button>Huevos ruveltos</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des3.png" alt=""><button>Omelette Pular</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des4.png" alt=""><button>Huevo en pan</button></div>
-								<div class="second-swiper-slide"><img src="img/home/desayuno/des5.png" alt=""><button>Omelette en pimiento</button></div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des1.png" alt="">
+										<button>Tortilla de patata</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des2.png" alt="">
+										<button>Huevos ruveltos</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des3.png" alt="">
+										<button>Omelette Pular</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des4.png" alt="">
+										<button>Huevo en pan</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des5.png" alt="">
+										<button>Omelette en pimiento</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des1.png" alt="">
+										<button>Tortilla de patata</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des2.png" alt="">
+										<button>Huevos ruveltos</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des3.png" alt="">
+										<button>Omelette Pular</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des4.png" alt="">
+										<button>Huevo en pan</button>
+									</div>
+								</div>
+								<div class="second-swiper-slide">
+									<div class="second-swiper-slide__wrapper">
+										<img src="img/home/desayuno/des5.png" alt="">
+										<button>Omelette en pimiento</button>
+									</div>
+								</div>
 							</div>
 							<!-- If we need pagination -->
 							<div class="second-swiper-pagination-wrapper">
@@ -638,29 +726,29 @@
 										<div class="footer-form__inputs-container">
 											<div class="footer-form__input-wrapper date-wrapper">
 												<div class="footer-form__input-title">Elige la fecha</div>
-												<input type="date" class="footer-form__input-input">
+												<input type="date" class="footer-form__input-input footer-form-date">
 												<!-- <img src="" alt="" class="footer-form__input-icon"> -->
 											</div>
 											<div class="footer-form__input-wrapper time-wrapper">
 												<div class="footer-form__input-title">Elige la hora</div>
-												<input type="time" class="footer-form__input-input">
+												<input type="time" class="footer-form__input-input footer-form-time">
 												<!-- <img src="" alt="" class="footer-form__input-icon"> -->
 											</div>
 											<div class="footer-form__input-wrapper clients-wrapper">
 												<div class="footer-form__input-title">¿Cuánta gente?</div>
-												<input class="footer-form__input-input">
+												<input class="footer-form__input-input footer-form-users">
 												<img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.51677%2015.6216C2.44585%2015.8885%202.6047%2016.1623%202.87158%2016.2332C3.13846%2016.3042%203.4123%2016.1453%203.48323%2015.8784L2.51677%2015.6216ZM14.5168%2015.8784C14.5877%2016.1453%2014.8615%2016.3042%2015.1284%2016.2332C15.3953%2016.1623%2015.5542%2015.8885%2015.4832%2015.6216L14.5168%2015.8784ZM3.48323%2015.8784C4.11166%2013.5137%206.33577%2011.75%209%2011.75V10.75C5.89083%2010.75%203.2638%2012.8106%202.51677%2015.6216L3.48323%2015.8784ZM9%2011.75C11.6642%2011.75%2013.8883%2013.5137%2014.5168%2015.8784L15.4832%2015.6216C14.7362%2012.8106%2012.1092%2010.75%209%2010.75V11.75ZM11.5%205.25C11.5%206.63071%2010.3807%207.75%209%207.75V8.75C10.933%208.75%2012.5%207.183%2012.5%205.25H11.5ZM9%207.75C7.61929%207.75%206.5%206.63071%206.5%205.25H5.5C5.5%207.183%207.067%208.75%209%208.75V7.75ZM6.5%205.25C6.5%203.86929%207.61929%202.75%209%202.75V1.75C7.067%201.75%205.5%203.317%205.5%205.25H6.5ZM9%202.75C10.3807%202.75%2011.5%203.86929%2011.5%205.25H12.5C12.5%203.317%2010.933%201.75%209%201.75V2.75Z'%20fill='%2333230A'/%3e%3c/svg%3e" alt="" class="footer-form__input-icon">
 											</div>
 											<div class="footer-form__input-wrapper text-input-wrapper">
 												<div class="footer-form__input-title">Tu correo electrónico</div>
-												<input class="footer-form__input-input">
+												<input class="footer-form__input-input footer-form-email">
 											</div>
 											<div class="footer-form__input-wrapper text-input-wrapper">
 												<div class="footer-form__input-title">Su nombre</div>
-												<input class="footer-form__input-input">
+												<input class="footer-form__input-input footer-form-phone">
 											</div>
 										</div>
-										<button class="footer-form__book-button">
+										<button class="footer-form__book-button footer-form-button">
 											<div class="footer-form__book-button-text">RESERVAR</div>
 											<div class="footer-form__book-button-img-wrapper">
 												<img src="data:image/svg+xml,%3csvg%20width='26'%20height='8'%20viewBox='0%200%2026%208'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.646446%204.35355C0.451185%204.15829%200.451185%203.84171%200.646446%203.64645L3.82843%200.464466C4.02369%200.269204%204.34027%200.269204%204.53553%200.464466C4.7308%200.659728%204.7308%200.976311%204.53553%201.17157L1.70711%204L4.53553%206.82843C4.7308%207.02369%204.7308%207.34027%204.53553%207.53553C4.34027%207.7308%204.02369%207.7308%203.82843%207.53553L0.646446%204.35355ZM26%204.5H1V3.5H26V4.5Z'%20fill='%2333230A'/%3e%3c/svg%3e" alt="arrow icon">
