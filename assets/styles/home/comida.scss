@@ -49,14 +49,15 @@
 		z-index: 10;
 	}
 	&__content-wrapper {
-		display: flex;
-		align-items: center;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
 		gap: 100px;
 		@media (max-width: 1920px){
 			gap: 5.208vw;
 		}
 		@media (max-width: 768px){
 			gap: 3vw;
+			display: flex;
 			flex-direction: column;
 		}
 	}
@@ -97,5 +98,31 @@
 				height: auto;
 			}
 		}	
+	}
+	&__video {
+		max-width: 100%;
+		width: 45vw;
+		height: 29.89vw;
+		border-radius: 30px;
+		overflow: hidden;
+		@media (max-width: 768px){
+			border-radius: 15px;
+			padding: 15px 25px;
+			height: 55.1vw;
+			width: 100%;
+		}
+		@media (max-width: 500px){
+			padding: 10px 20px
+		}
+		@media (max-width: 500px){
+			padding: 5px 15px
+		}
+		& iframe {
+			height: 100%;
+			width: 100%;
+			@media (max-width: 768px){
+				border-radius: 15px;
+			}
+		}
 	}
 }

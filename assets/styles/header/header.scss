@@ -270,6 +270,24 @@
 	}
 	&__right-list-item {
 	}
+	&__download-nav-button {
+		display: flex;
+		align-items: center;
+		gap: 3px;
+		&:hover {
+			& img {
+				filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(115deg) brightness(102%) contrast(103%);
+			}
+		}
+		& img {
+			width: 17px;
+			margin-bottom: -2px;
+			filter: invert(11%) sepia(19%) saturate(2920%) hue-rotate(7deg) brightness(96%) contrast(92%);
+			@media (max-width: 768px){
+				width: 15px;
+			}
+		}
+	}
 }
 
 .hidden-nav {

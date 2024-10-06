@@ -26,14 +26,63 @@
   transition: transform 0.3s ease; /* Плавное движение слайдов */
 	width: auto; /* Автоматическая ширина, чтобы слайды адаптировались */
   flex-shrink: 0; /* Предотвращаем сжатие слайдов */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+	&:hover {
+		cursor: pointer;
+	}
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		height: 100%;
+		padding-bottom: 80px;
+		@media (max-width: 768px){
+			gap: 60px;
+			max-height: 300px;
+			height: 100%;
+		}
+	}
   & img {
     border-radius: 30px;
-    width: 100%;
+    width: auto;
+		height: auto;
+		max-height: 300px;
+		object-fit: contain;
 		@media (max-width: 768px){
 			border-radius: 15px;
+			min-height: 230px;
+			object-fit: contain;
 		}
   }
 }
+.slide-text {
+	margin-top: -50px;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	&__title {
+		text-align: center;
+		font-size: 30px;
+		@media (max-width: 500px){
+			font-size: 26px;
+		}
+		@media (max-width: 400px){
+			font-size: 22px;
+		}
+	}
+	&__price {
+		text-align: center;
+		font-weight: 500;
+		font-size: 30px;
+	}
+}
+
+
+
 .swiper-pagination-wrapper {
 	display: flex;
 	justify-content: center;
@@ -45,8 +94,11 @@
 	justify-content: center;
 	gap: 18px;
 	padding: 0 0 0 0;
+	@media (max-width: 768px){
+		gap: 7px;
+	}
 	@media (max-width: 500px){
-		gap: 10px;
+		gap: 5px;
 	}
 }
 
