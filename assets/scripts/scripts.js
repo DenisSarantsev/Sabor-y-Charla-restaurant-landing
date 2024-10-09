@@ -138,6 +138,8 @@ const postOrderToBot = (uri, chatId, message) => {
 		successModal.classList.remove("_hidden");
 		document.querySelector(".success-modal__success-button").addEventListener("click", () => {
 			successModal.classList.add("_hidden");
+			const bodyElement = document.querySelector("body");
+			bodyElement.style.overflow = "scroll";
 		})
 	})
 	.catch(error => {

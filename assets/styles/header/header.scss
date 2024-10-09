@@ -603,6 +603,9 @@
 			left: 71vh;
 			top: 37vh;
 		}
+		@media (max-height: 600px){
+			top: 44vh;
+		}
 	}
 	&__center-light-image {
 
@@ -631,6 +634,9 @@
 					width: 70px;
 					height: 50px;
 				}
+			}
+			@media (max-height: 600px){
+				margin-left: -8px;
 			}
 	}
 }
