@@ -7,6 +7,9 @@
 	width: 100%;
 	display: flex;
 	justify-content: center;
+	@media (max-width: 768px){
+		width: 100vw;
+	}
 }
 .section-block-container {
 	max-width: 1920px;

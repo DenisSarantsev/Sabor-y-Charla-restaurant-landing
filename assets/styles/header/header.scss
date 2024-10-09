@@ -28,6 +28,7 @@
 		@media (max-width: 768px){
 			height: 100vh;
 			width: 100vw;
+			overflow: hidden;
 		}
 	}
 	&__deep-bg {
@@ -349,7 +350,6 @@
 	max-width: 1920px;
 	width: 100%;
 	overflow: hidden;
-	
 	@media (max-width: 1920px){
 		width: 100vw;
 	}
@@ -527,6 +527,9 @@
 	align-items: end;
 	overflow: hidden;
 	margin-bottom: -5px;
+	@media (max-width: 768px){
+		width: 100vw;
+	}
 	&__wrapper {
 		position: relative;
 		max-width: 1868px;
