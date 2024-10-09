@@ -4,135 +4,149 @@
     <meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SYC - SABOR Y CHARLA</title>
-    <script type="module" crossorigin src="/Sabor-y-Charla-restaurant-landing/dist/assets/index-X6tRXM1h.js"></script>
-    <link rel="stylesheet" crossorigin href="/Sabor-y-Charla-restaurant-landing/dist/assets/index-D537oGJO.css">
+    <script type="module" crossorigin src="/Sabor-y-Charla-restaurant-landing/dist/assets/index-Odhplr8i.js"></script>
+    <link rel="stylesheet" crossorigin href="/Sabor-y-Charla-restaurant-landing/dist/assets/index-ByY9ldQB.css">
   </head>
   <body>
-		<audio id="background-music">
-			<source src="/Sabor-y-Charla-restaurant-landing/dist/assets/audio-ppjBVXcW.m4a" type="audio/mpeg">
-			Your browser does not support the audio element.
-		</audio>
-		<div id="play-button-music"></div>
+
+		<div class="main-loader _hidden">
+			<div class="loader"></div>
+		</div>
+
+		<div class="success-modal _hidden">
+			<div class="success-modal__wrapper">
+				<img class="success-modal__image" src="img/common/other/success.png" alt="success icon">
+				<div class="success-modal__text">Solicitud enviada</div>
+				<button class="success-modal__success-button">Ok</button>
+			</div>
+		</div>
+
+		<div class="header-static__form header-form desktop-form _hidden">
+			<div class="header-form__wrapper">
+					<button class="header-form__close-button">
+						<img src="img/common/other/close.png" alt="">
+					</button>
+					<div class="header-form__title-container">
+						<h2 class="header-form__top-title">Tu visita</h2>
+						<h2 class="header-form__bottom-title">RESERVAR</h2>
+					</div>
+					<div class="header-form__inputs-wrapper">
+						<div class="header-form__inputs-item">
+							<div class="header-form__input-title">Elige la fecha</div>
+							<input value="" type="date" placeholder="15/09/24" class="header-form__input header-form__date-input header-desktop-form-date"/>
+							<!-- <img src="img/common/other/form-calendar.svg" alt="calendar icon"> -->
+						</div>
+						<div class="header-form__inputs-item">
+							<div class="header-form__input-title">Elige la hora</div>
+							<input value="" type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input header-desktop-form-time"/>
+							<!-- <img src="img/common/other/form-timer.svg" alt="timer icon"> -->
+						</div>
+						<div class="header-form__inputs-item how-much-people-item">
+							<div class="header-form__input-title">¿Cuánta gente?</div>
+							<div class="header-form__users-input-wrapper">
+								<input value="" placeholder="0" class="header-form__input header-form__users-input header-desktop-form-users"/>
+								<img src="img/common/other/form-user.svg" alt="user icon">
+								</div>
+						</div>
+						<div class="header-form__inputs-item">
+							<div class="header-form__input-title">Movil</div>
+							<input value="" type="email" class="header-form__input header-form__email-input header-desktop-form-email"/>
+						</div>
+						<div class="header-form__inputs-item">
+							<div class="header-form__input-title">Su nombre</div>
+							<input value="" type="text" class="header-form__input header-form__name-input header-desktop-form-phone"/>
+						</div>
+					</div>
+					<div class="header-form__form-error _hidden">
+						Para crear una reserva, complete todos los campos
+					</div>
+					<div class="header-form__book-button header-desktop-form-button">
+						<div class="header-form__book-button-text">RESERVAR</div>
+						<div class="header-form__book-button-arrow-wrapper">
+							<img src="img/common/other/arrow.svg" alt="arrow">
+						</div>
+					</div>
+			</div>
+		</div>
 
 		<header class="header section-block">
-			<img class="header__sidewalk-bg" src="/Sabor-y-Charla-restaurant-landing/dist/assets/sidewalk-bg-tJr58ucU.jpg" alt="">
-			<img class="header__deep-bg" src="/Sabor-y-Charla-restaurant-landing/dist/assets/madrid-bg-BTEBen9A.jpg" alt="">
+			<img class="header__sidewalk-bg" src="img/common/header/sidewalk-bg.jpg" alt="">
+			<img class="header__deep-bg" src="img/common/header/madrid-bg.jpg" alt="">
 			<div class="header__deep-bg-filter"></div>
 			<div class="header__container section-block-container">
 				<div class="header__mobile-logo-container">
-					<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/big-logo-C71ZXufC.svg" alt="logo">
+					<img src="img/common/header/static-elements/big-logo.svg" alt="logo">
 				</div>
 				<div class="header-interactive">
-					<div class="header-interactive__wrapper _hidden">
+					<div class="header-interactive__wrapper">
 						<div class="header-interactive__left-roller left-roller">
-							<img class="left-roller__left-roller-light" src="/Sabor-y-Charla-restaurant-landing/dist/assets/left-roller-light-CcKoVUIz.svg" alt="">
+							<img class="left-roller__left-roller-light" src="img/common/header/interactive-elements/rollers/left-roller-light.svg" alt="">
 							<div class="left-roller__left-roller-bg">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-								<img class="left-roller__left-roller-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
+								<img class="left-roller__left-roller-lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel">
 								<div class="left-roller__left-roller-bottom-lamel-wrapper">
-									<img class="left-roller__left-roller-lamel-grip" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202.98%202.98'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23777;%20stroke:%20%23141414;%20stroke-miterlimit:%2010;%20stroke-width:%20.5px;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_2'%20data-name='Шар_2'%3e%3ccircle%20class='cls-1'%20cx='1.49'%20cy='1.49'%20r='1.24'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-									<img class="left-roller__left-roller-bottom-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2083.61%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%231e2022;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3crect%20class='cls-1'%20width='83.61'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
+									<img class="left-roller__left-roller-lamel-grip" src="img/common/header/interactive-elements/rollers/roller-grip.svg" alt="lamel">
+									<img class="left-roller__left-roller-bottom-lamel" src="img/common/header/interactive-elements/rollers/bottom-lamel.svg" alt="lamel">
 								</div>
 							</div>
 						</div>
 						<div class="header-interactive__right-roller right-roller">
 							<div class="right-roller__background">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
-								<img class="right-roller__lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091.57%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23151516;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_4'%20data-name='Шар_4'%3e%3crect%20class='cls-1'%20width='91.57'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
+								<img class="right-roller__lamel" src="img/common/header/interactive-elements/rollers/lamel.svg" alt="lamel image">
 								<div class="right-roller__bottom-lamel-wrapper">
-									<img class="right-roller__lamel-grip" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%202.98%202.98'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23777;%20stroke:%20%23141414;%20stroke-miterlimit:%2010;%20stroke-width:%20.5px;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_2'%20data-name='Шар_2'%3e%3ccircle%20class='cls-1'%20cx='1.49'%20cy='1.49'%20r='1.24'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
-									<img class="right-roller__bottom-lamel" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2083.61%204.93'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%231e2022;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3crect%20class='cls-1'%20width='83.61'%20height='4.93'/%3e%3c/g%3e%3c/svg%3e" alt="lamel">
+									<img class="right-roller__lamel-grip" src="img/common/header/interactive-elements/rollers/roller-grip.svg" alt="lamel">
+									<img class="right-roller__bottom-lamel" src="img/common/header/interactive-elements/rollers/bottom-lamel.svg" alt="lamel">
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div class="header-background">
-					<div class="header-static__form header-form mobile-form">
-						<div class="header-form__wrapper">
-								<div class="header-form__title-container">
-									<h2 class="header-form__top-title">Tu visita</h2>
-									<h2 class="header-form__bottom-title">RESERVAR</h2>
-								</div>
-								<div class="header-form__inputs-wrapper">
-									<div class="header-form__inputs-item">
-										<div class="header-form__input-title">Elige la fecha</div>
-										<input type="date" placeholder="15/09/24" class="header-form__input header-form__date-input header-mobile-form-date"/>
-										<!-- <img src="/public/img/common/other/form-calendar.svg" alt="calendar icon"> -->
-									</div>
-									<div class="header-form__inputs-item">
-										<div class="header-form__input-title">Elige la hora</div>
-										<input type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input header-mobile-form-time"/>
-										<!-- <img src="/public/img/common/other/form-timer.svg" alt="timer icon"> -->
-									</div>
-									<div class="header-form__inputs-item how-much-people-item">
-										<div class="header-form__input-title">¿Cuánta gente?</div>
-										<div class="header-form__users-input-wrapper">
-											<input placeholder="0" class="header-form__input header-form__users-input header-mobile-form-users"/>
-											<img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.51677%2015.6216C2.44585%2015.8885%202.6047%2016.1623%202.87158%2016.2332C3.13846%2016.3042%203.4123%2016.1453%203.48323%2015.8784L2.51677%2015.6216ZM14.5168%2015.8784C14.5877%2016.1453%2014.8615%2016.3042%2015.1284%2016.2332C15.3953%2016.1623%2015.5542%2015.8885%2015.4832%2015.6216L14.5168%2015.8784ZM3.48323%2015.8784C4.11166%2013.5137%206.33577%2011.75%209%2011.75V10.75C5.89083%2010.75%203.2638%2012.8106%202.51677%2015.6216L3.48323%2015.8784ZM9%2011.75C11.6642%2011.75%2013.8883%2013.5137%2014.5168%2015.8784L15.4832%2015.6216C14.7362%2012.8106%2012.1092%2010.75%209%2010.75V11.75ZM11.5%205.25C11.5%206.63071%2010.3807%207.75%209%207.75V8.75C10.933%208.75%2012.5%207.183%2012.5%205.25H11.5ZM9%207.75C7.61929%207.75%206.5%206.63071%206.5%205.25H5.5C5.5%207.183%207.067%208.75%209%208.75V7.75ZM6.5%205.25C6.5%203.86929%207.61929%202.75%209%202.75V1.75C7.067%201.75%205.5%203.317%205.5%205.25H6.5ZM9%202.75C10.3807%202.75%2011.5%203.86929%2011.5%205.25H12.5C12.5%203.317%2010.933%201.75%209%201.75V2.75Z'%20fill='%23FAF6D2'/%3e%3c/svg%3e" alt="user icon">
-											</div>
-									</div>
-									<div class="header-form__inputs-item">
-										<div class="header-form__input-title">Tu correo electrónico</div>
-										<input type="email" class="header-form__input header-form__email-input header-mobile-form-email"/>
-									</div>
-									<div class="header-form__inputs-item">
-										<div class="header-form__input-title">Su nombre</div>
-										<input type="text" class="header-form__input header-form__name-input header-mobile-form-phone"/>
-									</div>
-								</div>
-								<div class="header-form__book-button header-mobile-form-button">
-									<div class="header-form__book-button-text">RESERVAR</div>
-									<div class="header-form__book-button-arrow-wrapper">
-										<img src="data:image/svg+xml,%3csvg%20width='26'%20height='8'%20viewBox='0%200%2026%208'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.646446%204.35355C0.451185%204.15829%200.451185%203.84171%200.646446%203.64645L3.82843%200.464466C4.02369%200.269204%204.34027%200.269204%204.53553%200.464466C4.7308%200.659728%204.7308%200.976311%204.53553%201.17157L1.70711%204L4.53553%206.82843C4.7308%207.02369%204.7308%207.34027%204.53553%207.53553C4.34027%207.7308%204.02369%207.7308%203.82843%207.53553L0.646446%204.35355ZM26%204.5H1V3.5H26V4.5Z'%20fill='%2333230A'/%3e%3c/svg%3e" alt="arrow">
-									</div>
-								</div>
-						</div>
-					</div>
 					<img class="header-background__bg-image" src="img/common/header/header-background.png" alt="restaurant background image">
 					<img class="header-background__mobile-top-horisontal-line" src="img/common/header/top-mobile-horizontal-line.png" alt="restaurant background image">
 					<img class="header-background__mobile-bottom-horisontal-line" src="img/common/header/bottom-mobile-horizontal-line.png" alt="restaurant background image">
@@ -143,84 +157,49 @@
 				</div>
 				<div class="header__static-elements header-static">
 					<div class="header-static__wrapper">
+						<div class="header-static__book-form-button book-button">
+							<button class="book-button__button">
+								RESERVAR
+								<img src="img/common/other/book.png" alt="book icon">
+							</button>
+						</div>
 						<div class="header-static__logo-container">
-							<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/big-logo-C71ZXufC.svg" alt="logo">
+							<img src="img/common/header/static-elements/big-logo.svg" alt="logo">
 						</div>
 						<div class="header-static__door-glass-wrapper door-glass-wrapper">
-							<img class="door-glass-wrapper__left-light-glasses light-elem" src="/Sabor-y-Charla-restaurant-landing/dist/assets/door-glass-light-D7xGq8wd.svg" alt="light glass">
+							<img class="door-glass-wrapper__left-light-glasses light-elem" src="img/common/header/static-elements/door-glass/door-glass-light.svg" alt="light glass">
 							<div class="door-glass-wrapper__left-glass-shine-wrapper">
-								<img class="door-glass-wrapper__left-glass-vertical-line" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%203.45%20114.14'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23121212;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3crect%20class='cls-1'%20width='3.45'%20height='114.14'/%3e%3c/g%3e%3c/svg%3e" alt="vertical line">
-								<img class="door-glass-wrapper__left-glass-shine" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2028.4%2018.26'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23ddc383;%20}%20.cls-2%20{%20opacity:%20.5;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%3e%3cg%20class='cls-2'%3e%3cpath%20class='cls-1'%20d='M0,18.26c9.47-3.59,18.93-7.18,28.4-10.77,0-1.55,0-3.1,0-4.66C18.93,6.44,9.47,10.05,0,13.66v4.6Z'/%3e%3c/g%3e%3cg%20class='cls-2'%3e%3cpath%20class='cls-1'%20d='M0,11.2C9.37,7.46,18.73,3.73,28.1,0c-.7,0-1.4.01-2.1.02C17.33,3.26,8.67,6.51,0,9.75v1.45Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="shine glass">
-								<img class="door-glass-wrapper__left-glass-shine" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2028.4%2018.26'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23ddc383;%20}%20.cls-2%20{%20opacity:%20.51;%20}%20.cls-3%20{%20opacity:%20.5;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%20class='cls-2'%3e%3cg%20class='cls-3'%3e%3cpath%20class='cls-1'%20d='M0,18.26c9.47-3.59,18.93-7.18,28.4-10.77,0-1.55,0-3.1,0-4.66C18.93,6.44,9.47,10.05,0,13.66v4.6Z'/%3e%3c/g%3e%3cg%20class='cls-3'%3e%3cpath%20class='cls-1'%20d='M0,11.2C9.37,7.46,18.73,3.73,28.1,0c-.7,0-1.4.01-2.1.02C17.33,3.26,8.67,6.51,0,9.75v1.45Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="shine glass">
-								<img class="door-glass-wrapper__left-glass-shine" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2028.4%2018.26'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23ddc383;%20}%20.cls-2%20{%20opacity:%20.51;%20}%20.cls-3%20{%20opacity:%20.5;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%20class='cls-2'%3e%3cg%20class='cls-3'%3e%3cpath%20class='cls-1'%20d='M0,18.26c9.47-3.59,18.93-7.18,28.4-10.77,0-1.55,0-3.1,0-4.66C18.93,6.44,9.47,10.05,0,13.66v4.6Z'/%3e%3c/g%3e%3cg%20class='cls-3'%3e%3cpath%20class='cls-1'%20d='M0,11.2C9.37,7.46,18.73,3.73,28.1,0c-.7,0-1.4.01-2.1.02C17.33,3.26,8.67,6.51,0,9.75v1.45Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="shine glass">
-								<img class="door-glass-wrapper__left-glass-shine" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2028.4%2018.26'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23ddc383;%20}%20.cls-2%20{%20opacity:%20.51;%20}%20.cls-3%20{%20opacity:%20.5;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%20class='cls-2'%3e%3cg%20class='cls-3'%3e%3cpath%20class='cls-1'%20d='M0,18.26c9.47-3.59,18.93-7.18,28.4-10.77,0-1.55,0-3.1,0-4.66C18.93,6.44,9.47,10.05,0,13.66v4.6Z'/%3e%3c/g%3e%3cg%20class='cls-3'%3e%3cpath%20class='cls-1'%20d='M0,11.2C9.37,7.46,18.73,3.73,28.1,0c-.7,0-1.4.01-2.1.02C17.33,3.26,8.67,6.51,0,9.75v1.45Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="shine glass">
-								<img class="door-glass-wrapper__left-glass-shine" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2028.4%2018.26'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23ddc383;%20}%20.cls-2%20{%20opacity:%20.51;%20}%20.cls-3%20{%20opacity:%20.5;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%20class='cls-2'%3e%3cg%20class='cls-3'%3e%3cpath%20class='cls-1'%20d='M0,18.26c9.47-3.59,18.93-7.18,28.4-10.77,0-1.55,0-3.1,0-4.66C18.93,6.44,9.47,10.05,0,13.66v4.6Z'/%3e%3c/g%3e%3cg%20class='cls-3'%3e%3cpath%20class='cls-1'%20d='M0,11.2C9.37,7.46,18.73,3.73,28.1,0c-.7,0-1.4.01-2.1.02C17.33,3.26,8.67,6.51,0,9.75v1.45Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="shine glass">
+								<img class="door-glass-wrapper__left-glass-vertical-line" src="img/common/header/static-elements/door-glass/vertical-line.svg" alt="vertical line">
+								<img class="door-glass-wrapper__left-glass-shine" src="img/common/header/static-elements/door-glass/door-glass-shine-1.svg" alt="shine glass">
+								<img class="door-glass-wrapper__left-glass-shine" src="img/common/header/static-elements/door-glass/door-glass-shine.svg" alt="shine glass">
+								<img class="door-glass-wrapper__left-glass-shine" src="img/common/header/static-elements/door-glass/door-glass-shine.svg" alt="shine glass">
+								<img class="door-glass-wrapper__left-glass-shine" src="img/common/header/static-elements/door-glass/door-glass-shine.svg" alt="shine glass">
+								<img class="door-glass-wrapper__left-glass-shine" src="img/common/header/static-elements/door-glass/door-glass-shine.svg" alt="shine glass">
 							</div>
 							<div class="door-glass-wrapper__right-glasses-container">
-								<img class="door-glass-wrapper__right-glass-shine" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2040.19%2066.99'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20none;%20}%20.cls-2%20{%20fill:%20%23ddc383;%20}%20.cls-3%20{%20opacity:%20.67;%20}%20.cls-4%20{%20clip-path:%20url(%23clippath);%20}%20%3c/style%3e%3cclipPath%20id='clippath'%3e%3crect%20class='cls-1'%20width='40.19'%20height='66.99'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%20class='cls-4'%3e%3cg%20class='cls-3'%3e%3cpolygon%20class='cls-2'%20points='0%2040.72%2067.78%2016.41%2067.78%204.49%200%2028.04%200%2040.72'/%3e%3c/g%3e%3cg%20class='cls-3'%3e%3cpolygon%20class='cls-2'%20points='0%2024.56%2067.89%20.32%2067.89%20-3.31%200%2021.05%200%2024.56'/%3e%3c/g%3e%3cg%20class='cls-3'%3e%3cpolygon%20class='cls-2'%20points='-.06%2054.9%2067.83%2030.66%2067.83%2027.03%20-.06%2051.39%20-.06%2054.9'/%3e%3c/g%3e%3cg%20class='cls-3'%3e%3cpolygon%20class='cls-2'%20points='0%2062.78%20102.6%2026.15%20102.6%2020.66%200%2057.48%200%2062.78'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="door glass shine">
-								<img class="door-glass-wrapper__right-glass-light light-elem" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2040.19%2066.99'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20url(%23_Градієнт_без_назви_127);%20}%20%3c/style%3e%3clinearGradient%20id='_Градієнт_без_назви_127'%20data-name='Градієнт%20без%20назви%20127'%20x1='9.7'%20y1='-2.78'%20x2='30.5'%20y2='69.77'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0'%20stop-color='%231d1d1b'/%3e%3cstop%20offset='.05'%20stop-color='%2324211d'/%3e%3cstop%20offset='.12'%20stop-color='%233a2e24'/%3e%3cstop%20offset='.21'%20stop-color='%235d432f'/%3e%3cstop%20offset='.31'%20stop-color='%238e603f'/%3e%3cstop%20offset='.35'%20stop-color='%23a56e47'/%3e%3cstop%20offset='.42'%20stop-color='%23b17d47'/%3e%3cstop%20offset='.48'%20stop-color='%23c19147'/%3e%3cstop%20offset='.66'%20stop-color='%23a0704e'/%3e%3cstop%20offset='.71'%20stop-color='%23906647'/%3e%3cstop%20offset='.83'%20stop-color='%23674c38'/%3e%3cstop%20offset='.98'%20stop-color='%2326221e'/%3e%3cstop%20offset='1'%20stop-color='%231d1d1b'/%3e%3c/linearGradient%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3crect%20class='cls-1'%20width='40.19'%20height='66.99'/%3e%3c/g%3e%3c/svg%3e" alt="door glass shine">
+								<img class="door-glass-wrapper__right-glass-shine" src="img/common/header/static-elements/door-glass/left-door-big-glass-shine.svg" alt="door glass shine">
+								<img class="door-glass-wrapper__right-glass-light light-elem" src="img/common/header/static-elements/door-glass/left-door-big-glass-light.svg" alt="door glass shine">
 							</div>
 						</div>
 						<div class="header-static__window-wrapper window-wrapper">
-							<img class="window-wrapper__top-frame-image" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2047.78%2024.7'%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cpolygon%20points='29.13%2022.2%2045.71%208.64%2047.78%2011.01%2030.98%2024.11%2029.13%2022.2'/%3e%3cpath%20d='M0,11.21c5.63,4.37,11.25,8.75,16.88,13.12-.2.13-.41.25-.61.38l15.38-.05c-.22-.18-.44-.36-.67-.54-.28-.5-.8-1.28-1.69-1.97-.64-.5-1.26-.78-1.72-.96L34.11,1.12c-.87-.3-1.74-.59-2.61-.89-2.29,6.75-4.59,13.5-6.88,20.25h-2.06c-2.01-6.83-4.03-13.66-6.04-20.48-1.04.46-2.09.92-3.13,1.38,2.15,6.57,4.31,13.15,6.46,19.72-.52.35-1.04.71-1.56,1.06C12.75,17.68,7.2,13.21,1.66,8.74l-1.66,2.46Z'/%3e%3c/g%3e%3c/svg%3e" alt="window frames">
-							<img class="window-wrapper__bottom-frame-image" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2083.73%20108.08'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20opacity:%20.49;%20}%20.cls-1,%20.cls-2%20{%20fill:%20%23121212;%20}%20.cls-3%20{%20opacity:%20.66;%20}%20.cls-4%20{%20clip-path:%20url(%23clippath);%20}%20%3c/style%3e%3cclipPath%20id='clippath'%3e%3cpath%20class='cls-2'%20d='M82.97,44.14H.16C-1.01,20.43,17.87.44,40.77,0c23.47-.45,43.38,19.82,42.2,44.13Z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%3e%3cpath%20class='cls-2'%20d='M82.97,44.14H.16C-1.01,20.43,17.87.44,40.77,0c23.47-.45,43.38,19.82,42.2,44.13Z'/%3e%3cg%20class='cls-4'%3e%3crect%20class='cls-1'%20x='-.46'%20y='-3.43'%20width='86.17'%20height='61.01'/%3e%3c/g%3e%3c/g%3e%3cpath%20class='cls-3'%20d='M0,46.83v61.24h83.73v-61.24H0ZM81.1,105.53H2.37v-55.81h78.73v55.81Z'/%3e%3c/g%3e%3c/svg%3e" alt="window frames">
-							<img class="window-wrapper__peoples-image" src="/Sabor-y-Charla-restaurant-landing/dist/assets/peoples-KxQ_qbXA.svg" alt="peoples">
-							<img class="window-wrapper__shining-bottom-image" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2083.73%2057.69'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23ffffd7;%20}%20.cls-2%20{%20opacity:%20.5;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%20class='cls-2'%3e%3cpolygon%20class='cls-1'%20points='0%2057.69%2083.6%2025.84%2083.6%2010.22%200%2041.08%200%2057.69'/%3e%3c/g%3e%3cg%20class='cls-2'%3e%3cpolygon%20class='cls-1'%20points='0%2036.51%2083.73%204.76%2083.73%200%200%2031.92%200%2036.51'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="shining">
-							<img class="window-wrapper__shining-top-image" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2056.99%2024.41'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20none;%20}%20.cls-2%20{%20fill:%20%23ffffd7;%20}%20.cls-3%20{%20opacity:%20.27;%20}%20.cls-4%20{%20clip-path:%20url(%23clippath);%20}%20%3c/style%3e%3cclipPath%20id='clippath'%3e%3cpath%20class='cls-1'%20d='M0,24.26c19,.05,38,.1,56.99.16-.46-2.65-2.09-9.88-8.39-16.05C47.5,7.27,39.83-.02,28.39,0,17.18.02,6.66,7.04,1.25,17.93c-.42,2.11-.84,4.22-1.25,6.33Z'/%3e%3c/clipPath%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%20class='cls-4'%3e%3cg%20class='cls-3'%3e%3cpath%20class='cls-2'%20d='M-2.47,37.13c19.54-7.23,39.08-14.47,58.62-21.7-.45-3.51-.9-7.02-1.35-10.54L-2.47,25.85v11.28Z'/%3e%3c/g%3e%3cg%20class='cls-3'%3e%3cpolygon%20class='cls-2'%20points='-2.47%2023%2053.74%201.82%2053.74%20-1.36%20-2.47%2019.93%20-2.47%2023'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="shining">
-							<img class="window-wrapper__window-top-bg" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2063.77%2028.86'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20opacity:%20.49;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cpath%20class='cls-1'%20d='M0,28.68c21.26.06,42.51.12,63.77.19C62.09,12.49,48.13-.06,31.76,0,15.55.06,1.76,12.47,0,28.68Z'/%3e%3c/g%3e%3c/svg%3e" alt="window top bg">
-							<img class="window-wrapper__window-top-small-bg" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2063.77%2028.86'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20opacity:%20.49;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cpath%20class='cls-1'%20d='M0,28.68c21.26.06,42.51.12,63.77.19C62.09,12.49,48.13-.06,31.76,0,15.55.06,1.76,12.47,0,28.68Z'/%3e%3c/g%3e%3c/svg%3e" alt="window top bg">
-							<img class="window-wrapper__window-lamp" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%208.69%206.28'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23111;%20}%20.cls-2%20{%20fill:%20%23262525;%20}%20.cls-3%20{%20opacity:%20.48;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%20class='cls-3'%3e%3cg%3e%3crect%20class='cls-1'%20x='2.95'%20y='0'%20width='2.51'%20height='1.85'%20rx='.93'%20ry='.93'/%3e%3cpath%20d='M1.48,1.49c.07-.07.14-.09.18-.1h5.11s.13.03.21.11c.07.07.1.14.11.18.53,1.53,1.06,3.06,1.6,4.58-1.29-.19-2.79-.32-4.47-.31-1.58,0-3,.13-4.22.31.46-1.52.92-3.04,1.38-4.56,0-.03.01-.14.1-.22Z'/%3e%3cpath%20class='cls-2'%20d='M2.15,1.6c.43-.01.85-.03,1.28-.04-.42,1.37-.83,2.73-1.25,4.1-.49.08-.99.15-1.48.23.48-1.43.97-2.86,1.45-4.29Z'/%3e%3cpath%20class='cls-2'%20d='M3.65,1.6h.37c-.4,1.33-.79,2.66-1.19,3.99-.15.02-.29.05-.44.07.42-1.35.84-2.71,1.26-4.06Z'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="lamp image">
-							<img class="window-wrapper__top-window-frame" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2072.65%2035.41'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20url(%23_Градієнт_без_назви_380-2);%20opacity:%20.15;%20}%20.cls-2%20{%20fill:%20url(%23_Градієнт_без_назви_380);%20}%20.cls-3%20{%20clip-path:%20url(%23clippath);%20}%20%3c/style%3e%3clinearGradient%20id='_Градієнт_без_назви_380'%20data-name='Градієнт%20без%20назви%20380'%20x1='0'%20y1='17.71'%20x2='72.65'%20y2='17.71'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0'%20stop-color='%230c0a0a'/%3e%3cstop%20offset='.15'%20stop-color='%23211d1b'/%3e%3cstop%20offset='.22'%20stop-color='%232e2826'/%3e%3cstop%20offset='.5'%20stop-color='%23221d1b'/%3e%3cstop%20offset='.61'%20stop-color='%23241f1d'/%3e%3cstop%20offset='.82'%20stop-color='%23302926'/%3e%3cstop%20offset='.98'%20stop-color='%230c0a0a'/%3e%3c/linearGradient%3e%3cclipPath%20id='clippath'%3e%3cpath%20class='cls-2'%20d='M72.65,35.17c-24.22.08-48.44.16-72.65.25C.68,16.05,16.45.49,35.4.01c19.54-.5,36.41,15.19,37.25,35.15Z'/%3e%3c/clipPath%3e%3clinearGradient%20id='_Градієнт_без_назви_380-2'%20data-name='Градієнт%20без%20назви%20380'%20x1='-2.75'%20y1='22.24'%20x2='74.88'%20y2='22.24'%20xlink:href='%23_Градієнт_без_назви_380'/%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%3e%3cpath%20class='cls-2'%20d='M72.65,35.17c-24.22.08-48.44.16-72.65.25C.68,16.05,16.45.49,35.4.01c19.54-.5,36.41,15.19,37.25,35.15Z'/%3e%3cg%20class='cls-3'%3e%3crect%20class='cls-1'%20x='-2.75'%20y='-.67'%20width='77.63'%20height='45.83'/%3e%3c/g%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="window background">
-							<img class="window-wrapper__top-window-light light-elem" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2083.73%2052.4'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20url(%23_Градієнт_без_назви_74);%20}%20%3c/style%3e%3clinearGradient%20id='_Градієнт_без_назви_74'%20data-name='Градієнт%20без%20назви%2074'%20x1='0'%20y1='26.2'%20x2='83.73'%20y2='26.2'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0'%20stop-color='%231d1d1b'/%3e%3cstop%20offset='.03'%20stop-color='%2324211d'/%3e%3cstop%20offset='.07'%20stop-color='%233a2e24'/%3e%3cstop%20offset='.13'%20stop-color='%235d432f'/%3e%3cstop%20offset='.19'%20stop-color='%238e603f'/%3e%3cstop%20offset='.22'%20stop-color='%23a56e47'/%3e%3cstop%20offset='.33'%20stop-color='%23c78844'/%3e%3cstop%20offset='.54'%20stop-color='%23ffb541'/%3e%3cstop%20offset='.65'%20stop-color='%23da9a45'/%3e%3cstop%20offset='.79'%20stop-color='%23b07b4b'/%3e%3cstop%20offset='.86'%20stop-color='%23a0704e'/%3e%3cstop%20offset='.89'%20stop-color='%23906647'/%3e%3cstop%20offset='.93'%20stop-color='%23674c38'/%3e%3cstop%20offset='.99'%20stop-color='%2326221e'/%3e%3cstop%20offset='1'%20stop-color='%231d1d1b'/%3e%3c/linearGradient%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3crect%20class='cls-1'%20width='83.73'%20height='52.4'/%3e%3c/g%3e%3c/svg%3e" alt="window light">
-							<img class="window-wrapper__bottom-window-light light-elem" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2083.6%2061.04'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20url(%23_Градієнт_без_назви_146);%20}%20%3c/style%3e%3clinearGradient%20id='_Градієнт_без_назви_146'%20data-name='Градієнт%20без%20назви%20146'%20x1='58.26'%20y1='71.27'%20x2='25.33'%20y2='-10.24'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0'%20stop-color='%23000'/%3e%3cstop%20offset='.03'%20stop-color='%23070502'/%3e%3cstop%20offset='.09'%20stop-color='%231d150a'/%3e%3cstop%20offset='.15'%20stop-color='%23402e17'/%3e%3cstop%20offset='.22'%20stop-color='%23715128'/%3e%3cstop%20offset='.24'%20stop-color='%23815d2e'/%3e%3cstop%20offset='.32'%20stop-color='%23a97e33'/%3e%3cstop%20offset='.41'%20stop-color='%23d5a238'/%3e%3cstop%20offset='.46'%20stop-color='%23e7b03b'/%3e%3cstop%20offset='.65'%20stop-color='%23986a2e'/%3e%3cstop%20offset='.75'%20stop-color='%2371542e'/%3e%3cstop%20offset='.86'%20stop-color='%234d402f'/%3e%3cstop%20offset='.94'%20stop-color='%2337342f'/%3e%3cstop%20offset='1'%20stop-color='%23303030'/%3e%3c/linearGradient%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3crect%20class='cls-1'%20width='83.6'%20height='61.04'/%3e%3c/g%3e%3c/svg%3e" alt="window light">
-							<img class="window-wrapper__center-window-light light-elem" src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20xmlns:xlink='http://www.w3.org/1999/xlink'%20viewBox='0%200%2056.56%2024.64'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20url(%23_Градієнт_без_назви_121);%20}%20.cls-2%20{%20fill:%20url(%23_Градієнт_без_назви_121-2);%20}%20.cls-3%20{%20fill:%20url(%23_Градієнт_без_назви_121-3);%20}%20.cls-4%20{%20fill:%20url(%23_Градієнт_без_назви_121-4);%20}%20.cls-5%20{%20fill:%20url(%23_Градієнт_без_назви_121-5);%20}%20.cls-6%20{%20fill:%20url(%23_Градієнт_без_назви_121-6);%20}%20%3c/style%3e%3clinearGradient%20id='_Градієнт_без_назви_121'%20data-name='Градієнт%20без%20назви%20121'%20x1='6.58'%20y1='12.18'%20x2='24.14'%20y2='12.18'%20gradientUnits='userSpaceOnUse'%3e%3cstop%20offset='0'%20stop-color='%231d1d1b'/%3e%3cstop%20offset='.02'%20stop-color='%2324211d'/%3e%3cstop%20offset='.06'%20stop-color='%233a2e24'/%3e%3cstop%20offset='.1'%20stop-color='%235d432f'/%3e%3cstop%20offset='.15'%20stop-color='%238e603f'/%3e%3cstop%20offset='.17'%20stop-color='%23a56e47'/%3e%3cstop%20offset='.24'%20stop-color='%23b17d47'/%3e%3cstop%20offset='.33'%20stop-color='%23c49347'/%3e%3cstop%20offset='.68'%20stop-color='%23c19147'/%3e%3cstop%20offset='.86'%20stop-color='%23a0704e'/%3e%3cstop%20offset='.89'%20stop-color='%23906647'/%3e%3cstop%20offset='.93'%20stop-color='%23674c38'/%3e%3cstop%20offset='.99'%20stop-color='%2326221e'/%3e%3cstop%20offset='1'%20stop-color='%231d1d1b'/%3e%3c/linearGradient%3e%3clinearGradient%20id='_Градієнт_без_назви_121-2'%20data-name='Градієнт%20без%20назви%20121'%20x1='32.49'%20y1='12.07'%20x2='49.63'%20y2='12.07'%20xlink:href='%23_Градієнт_без_назви_121'/%3e%3clinearGradient%20id='_Градієнт_без_назви_121-3'%20data-name='Градієнт%20без%20назви%20121'%20x1='20.9'%20y1='10.45'%20x2='35.51'%20y2='10.45'%20xlink:href='%23_Градієнт_без_назви_121'/%3e%3clinearGradient%20id='_Градієнт_без_назви_121-4'%20data-name='Градієнт%20без%20назви%20121'%20x1='35.43'%20y1='18.11'%20x2='56.37'%20y2='18.11'%20xlink:href='%23_Градієнт_без_назви_121'/%3e%3clinearGradient%20id='_Градієнт_без_назви_121-5'%20data-name='Градієнт%20без%20назви%20121'%20x1='0'%20y1='18.35'%20x2='20.94'%20y2='18.35'%20xlink:href='%23_Градієнт_без_назви_121'/%3e%3clinearGradient%20id='_Градієнт_без_назви_121-6'%20data-name='Градієнт%20без%20назви%20121'%20x1='0'%20y1='12.32'%20x2='56.56'%20y2='12.32'%20xlink:href='%23_Градієнт_без_назви_121'/%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%3e%3cpath%20class='cls-1'%20d='M22.48,22.32l1.66-.9L18.04,2.05c-1.82.72-4.05,1.79-6.4,3.39-2.11,1.43-3.78,2.92-5.05,4.22,5.3,4.22,10.6,8.44,15.9,12.66Z'/%3e%3cpath%20class='cls-2'%20d='M32.49,21.21l1.46,1.2,15.68-12.89c-1.35-1.42-3.17-3.09-5.54-4.67-2.12-1.42-4.12-2.41-5.8-3.11-1.94,6.49-3.87,12.98-5.81,19.47Z'/%3e%3cpath%20class='cls-3'%20d='M26.77,20.43h2.11L35.51,1.22c-1.98-.41-4.48-.76-7.38-.75-2.84,0-5.29.35-7.23.75,1.96,6.4,3.92,12.81,5.88,19.21Z'/%3e%3cpath%20class='cls-4'%20d='M35.43,24.18c6.98.08,13.96.15,20.94.23-.14-1.66-.5-3.97-1.51-6.55-1.05-2.69-2.41-4.7-3.46-6.03l-15.97,12.36Z'/%3e%3cpath%20class='cls-5'%20d='M20.94,24.42C13.96,24.49,6.98,24.57,0,24.64c.07-1.6.36-4,1.43-6.7,1.07-2.71,2.5-4.66,3.54-5.88,5.32,4.12,10.65,8.24,15.97,12.36Z'/%3e%3cpath%20class='cls-6'%20d='M0,24.64c18.85,0,37.71,0,56.56,0-.3-2.43-1.09-6.37-3.49-10.54C46.74,3.13,35.04.71,33.7.46c-1.41-.27-6.82-1.18-13.36.69-1.81.52-13.79,4.15-18.53,15.53-1.34,3.22-1.71,6.12-1.82,7.96Z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="window light">
-						</div>
-						<div class="header-static__form header-form desktop-form">
-							<div class="header-form__wrapper">
-									<div class="header-form__title-container">
-										<h2 class="header-form__top-title">Tu visita</h2>
-										<h2 class="header-form__bottom-title">RESERVAR</h2>
-									</div>
-									<div class="header-form__inputs-wrapper">
-										<div class="header-form__inputs-item">
-											<div class="header-form__input-title">Elige la fecha</div>
-											<input value="" type="date" placeholder="15/09/24" class="header-form__input header-form__date-input header-desktop-form-date"/>
-											<!-- <img src="/public/img/common/other/form-calendar.svg" alt="calendar icon"> -->
-										</div>
-										<div class="header-form__inputs-item">
-											<div class="header-form__input-title">Elige la hora</div>
-											<input value="" type="time" placeholder="04:00 p.m." class="header-form__input header-form__time-input header-desktop-form-time"/>
-											<!-- <img src="/public/img/common/other/form-timer.svg" alt="timer icon"> -->
-										</div>
-										<div class="header-form__inputs-item how-much-people-item">
-											<div class="header-form__input-title">¿Cuánta gente?</div>
-											<div class="header-form__users-input-wrapper">
-												<input value="" placeholder="0" class="header-form__input header-form__users-input header-desktop-form-users"/>
-												<img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.51677%2015.6216C2.44585%2015.8885%202.6047%2016.1623%202.87158%2016.2332C3.13846%2016.3042%203.4123%2016.1453%203.48323%2015.8784L2.51677%2015.6216ZM14.5168%2015.8784C14.5877%2016.1453%2014.8615%2016.3042%2015.1284%2016.2332C15.3953%2016.1623%2015.5542%2015.8885%2015.4832%2015.6216L14.5168%2015.8784ZM3.48323%2015.8784C4.11166%2013.5137%206.33577%2011.75%209%2011.75V10.75C5.89083%2010.75%203.2638%2012.8106%202.51677%2015.6216L3.48323%2015.8784ZM9%2011.75C11.6642%2011.75%2013.8883%2013.5137%2014.5168%2015.8784L15.4832%2015.6216C14.7362%2012.8106%2012.1092%2010.75%209%2010.75V11.75ZM11.5%205.25C11.5%206.63071%2010.3807%207.75%209%207.75V8.75C10.933%208.75%2012.5%207.183%2012.5%205.25H11.5ZM9%207.75C7.61929%207.75%206.5%206.63071%206.5%205.25H5.5C5.5%207.183%207.067%208.75%209%208.75V7.75ZM6.5%205.25C6.5%203.86929%207.61929%202.75%209%202.75V1.75C7.067%201.75%205.5%203.317%205.5%205.25H6.5ZM9%202.75C10.3807%202.75%2011.5%203.86929%2011.5%205.25H12.5C12.5%203.317%2010.933%201.75%209%201.75V2.75Z'%20fill='%23FAF6D2'/%3e%3c/svg%3e" alt="user icon">
-												</div>
-										</div>
-										<div class="header-form__inputs-item">
-											<div class="header-form__input-title">Tu correo electrónico</div>
-											<input value="" type="email" class="header-form__input header-form__email-input header-desktop-form-email"/>
-										</div>
-										<div class="header-form__inputs-item">
-											<div class="header-form__input-title">Su nombre</div>
-											<input value="" type="text" class="header-form__input header-form__name-input header-desktop-form-phone"/>
-										</div>
-									</div>
-									<div class="header-form__book-button header-desktop-form-button">
-										<div class="header-form__book-button-text">RESERVAR</div>
-										<div class="header-form__book-button-arrow-wrapper">
-											<img src="data:image/svg+xml,%3csvg%20width='26'%20height='8'%20viewBox='0%200%2026%208'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.646446%204.35355C0.451185%204.15829%200.451185%203.84171%200.646446%203.64645L3.82843%200.464466C4.02369%200.269204%204.34027%200.269204%204.53553%200.464466C4.7308%200.659728%204.7308%200.976311%204.53553%201.17157L1.70711%204L4.53553%206.82843C4.7308%207.02369%204.7308%207.34027%204.53553%207.53553C4.34027%207.7308%204.02369%207.7308%203.82843%207.53553L0.646446%204.35355ZM26%204.5H1V3.5H26V4.5Z'%20fill='%2333230A'/%3e%3c/svg%3e" alt="arrow">
-										</div>
-									</div>
-							</div>
+							<img class="window-wrapper__top-frame-image" src="img/common/header/static-elements/window-glass/top-window-frames.svg" alt="window frames">
+							<img class="window-wrapper__bottom-frame-image" src="img/common/header/static-elements/window-glass/window-frames.svg" alt="window frames">
+							<img class="window-wrapper__peoples-image" src="img/common/header/static-elements/window-glass/peoples.svg" alt="peoples">
+							<img class="window-wrapper__shining-bottom-image" src="img/common/header/static-elements/window-glass/right-window-shining.svg" alt="shining">
+							<img class="window-wrapper__shining-top-image" src="img/common/header/static-elements/window-glass/right-window-top-shining.svg" alt="shining">
+							<img class="window-wrapper__window-top-bg" src="img/common/header/static-elements/window-glass/window-top-bg.svg" alt="window top bg">
+							<img class="window-wrapper__window-top-small-bg" src="img/common/header/static-elements/window-glass/window-top-bg.svg" alt="window top bg">
+							<img class="window-wrapper__window-lamp" src="img/common/header/static-elements/window-glass/window-lamp.svg" alt="lamp image">
+							<img class="window-wrapper__top-window-frame" src="img/common/header/static-elements/window-glass/top-window-frame.svg" alt="window background">
+							<img class="window-wrapper__top-window-light light-elem" src="img/common/header/static-elements/window-glass/top-window-light.svg" alt="window light">
+							<img class="window-wrapper__bottom-window-light light-elem" src="img/common/header/static-elements/window-glass/bottom-window-light.svg" alt="window light">
+							<img class="window-wrapper__center-window-light light-elem" src="img/common/header/static-elements/window-glass/center-window-light.svg" alt="window light">
 						</div>
 						<div class="header-static__center-light-wrapper mobile-lamp-none">
-							<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/center-light-CTtFWHfc.png" alt="light image" class="header-static__center-light-image">
+							<img src="img/common/header/static-elements/center-light.png" alt="light image" class="header-static__center-light-image">
 						</div>
 						<div class="header-static__mobile-lamp-wrapper">
-							<img src="data:image/svg+xml,%3c?xml%20version='1.0'%20encoding='UTF-8'?%3e%3csvg%20id='_Слой_2'%20data-name='Слой_2'%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2017.16%2013'%3e%3cdefs%3e%3cstyle%3e%20.cls-1%20{%20fill:%20%23111;%20}%20.cls-2%20{%20fill:%20%23ffd497;%20}%20.cls-3%20{%20fill:%20%23262525;%20}%20%3c/style%3e%3c/defs%3e%3cg%20id='_Шар_1'%20data-name='Шар_1'%3e%3cg%3e%3crect%20class='cls-1'%20x='5.83'%20y='0'%20width='4.96'%20height='3.66'%20rx='1.83'%20ry='1.83'/%3e%3cpath%20d='M2.92,2.95c.13-.13.28-.17.35-.19h10.1c.08.02.26.07.42.22.14.13.19.28.22.35,1.05,3.02,2.1,6.03,3.15,9.05-2.54-.37-5.51-.63-8.82-.62-3.11.01-5.91.27-8.34.62.91-3,1.81-6,2.72-9,0-.06.03-.27.2-.44Z'/%3e%3cellipse%20class='cls-2'%20cx='8.58'%20cy='12.39'%20rx='8.58'%20ry='.62'/%3e%3cpath%20class='cls-3'%20d='M4.24,3.16c.84-.03,1.68-.05,2.52-.08-.82,2.7-1.64,5.4-2.47,8.1-.97.15-1.95.3-2.92.46.96-2.82,1.91-5.65,2.87-8.47Z'/%3e%3cpath%20class='cls-3'%20d='M7.21,3.16h.72c-.78,2.63-1.56,5.25-2.35,7.88-.29.05-.58.09-.87.14.83-2.67,1.66-5.34,2.49-8.02Z'/%3e%3c/g%3e%3c/g%3e%3c/svg%3e" alt="lamp image" class="header-static__mobile-lamp-image">
+							<img src="img/common/header/static-elements/mobile-lamp.svg" alt="lamp image" class="header-static__mobile-lamp-image">
 						</div>
 					</div>
 				</div>
@@ -251,7 +230,7 @@
 							<li class="nav-menu__right-list-item nav-button"><a href="">SOMBRE NOSOTROS</a></li>
 							<li class="nav-menu__right-list-item nav-button nav-menu__download-nav-button">
 								<a href="">MENU</a>
-								<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/download-GbdmX70V.png" alt="download icon">
+								<img src="img/common/header/static-elements/download.png" alt="download icon">
 							</li>
 						</ul>
 					</div>
@@ -270,10 +249,10 @@
 							<div class="sabor-y-charla__text-wrapper-top-text">es un lugar donde los sabores y las conversaciones se fusionan en una sola experiencia</div>
 							<!-- <div class="sabor-y-charla__text-wrapper-center-text"><div>Working since</div><div>2024</div></div> -->
 							<div class="sabor-y-charla__social-icons-wrapper">
-								<a href="https://www.instagram.com/sabor_y_charla/" target="_blank" class="sabor-y-charla__social-icon"><img class="sabor-y-charla__instagram-icon" src="/Sabor-y-Charla-restaurant-landing/dist/assets/instagram-B2wmwn_2.png" alt="instagram"></a>
-								<a href="https://www.facebook.com/profile.php?id=61560877754168" target="_blank" class="sabor-y-charla__social-icon"><img class="sabor-y-charla__facebook-icon" src="/Sabor-y-Charla-restaurant-landing/dist/assets/facebook-DqzqEaPk.png" alt="facebook"></a>
-								<a href="https://www.youtube.com/@SaboryCharla" target="_blank" class="sabor-y-charla__social-icon"><img class="sabor-y-charla__youtube-icon" src="/Sabor-y-Charla-restaurant-landing/dist/assets/youtube--hXuyzki.png" alt="youtube"></a>
-								<a href="https://t.me/saborycharla" target="_blank" class="sabor-y-charla__social-icon"><img class="sabor-y-charla__telegram-icon" src="/Sabor-y-Charla-restaurant-landing/dist/assets/telegram-iPT0wfpn.png" alt="telegram"></a>
+								<a href="https://www.instagram.com/sabor_y_charla/" target="_blank" class="sabor-y-charla__social-icon"><img class="sabor-y-charla__instagram-icon" src="img/common/social-icons/instagram.png" alt="instagram"></a>
+								<a href="https://www.facebook.com/profile.php?id=61560877754168" target="_blank" class="sabor-y-charla__social-icon"><img class="sabor-y-charla__facebook-icon" src="img/common/social-icons/facebook.png" alt="facebook"></a>
+								<a href="https://www.youtube.com/@SaboryCharla" target="_blank" class="sabor-y-charla__social-icon"><img class="sabor-y-charla__youtube-icon" src="img/common/social-icons/youtube.png" alt="youtube"></a>
+								<a href="https://t.me/saborycharla" target="_blank" class="sabor-y-charla__social-icon"><img class="sabor-y-charla__telegram-icon" src="img/common/social-icons/telegram.png" alt="telegram"></a>
 							</div>
 							<div class="sabor-y-charla__text-wrapper-bottom-text">Nuestro restaurante los invita a disfrutar de exquisitos platos, preparados con amor y atención al detalle, en un ambiente acogedor y amigable</div>
 						</div>
@@ -296,14 +275,34 @@
 						<h3 class="opening-hour__title">Opening Hour</h3>
 						<div class="opening-hour__subtitle">Sobre nosotros En Sabor y Charla creemos que la comida no es solo para saciar el hambre, sino una verdadera ceremonia que une a las personas. Nuestra misión es ofrecerles una experiencia gastronómica inolvidable, combinando recetas tradicionales con técnicas culinarias modernas.</div>
 						<div class="opening-hour__schedule">
-							<div class="opening-hour__schedule-top-line">Lunes DE 8:00 A 23:00</div>
-							<div class="opening-hour__schedule-top-line">Lunes DE 8:00 A 23:00</div>
-							<div class="opening-hour__schedule-top-line">Martes DE 8:00 A 23:00</div>
-							<div class="opening-hour__schedule-top-line">Miércoles DE 8:00 A 23:00</div>
-							<div class="opening-hour__schedule-top-line">Jueves DE 8:00 A 23:00</div>
-							<div class="opening-hour__schedule-top-line">Viernes DE 8:00 A 00:00</div>
-							<div class="opening-hour__schedule-top-line">Sábado DE 9:00 A 00:00</div>
-							<div class="opening-hour__schedule-bottom-line">Domingo DE 9:00 A 14:00</div>
+							<div class="opening-hour__schedule-top-line">
+								<div>Lunes</div>
+								<div>DE 8:00 A 23:00</div>
+							</div>
+							<div class="opening-hour__schedule-top-line">
+								<div>Martes</div>
+								<div>DE 8:00 A 23:00</div>
+							</div>
+							<div class="opening-hour__schedule-top-line">
+								<div>Miércoles</div>
+								<div>DE 8:00 A 23:00</div>
+							</div>
+							<div class="opening-hour__schedule-top-line">
+								<div>Jueves</div>
+								<div>DE 8:00 A 23:00</div>
+							</div>
+							<div class="opening-hour__schedule-top-line">
+								<div>Viernes</div>
+								<div>DE 8:00 A 00:00</div>
+							</div>
+							<div class="opening-hour__schedule-top-line">
+								<div>Sábado</div>
+								<div>DE 9:00 A 00:00</div>
+							</div>
+							<div class="opening-hour__schedule-bottom-line">
+								<div>Domingo</div>
+								<div>DE 9:00 A 14:00</div>
+							</div>
 						</div>
 						<div class="opening-hour__bottom-subtitle">
 							<div>RESERVATION</div>
@@ -495,7 +494,7 @@
 							<!-- Slides -->
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/agua-de-valencia-DriEU9v0.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/agua-de-valencia.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Aqua De Valencia</div>
@@ -504,7 +503,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/aguardiente-de-orujo-DKmvpjWu.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/aguardiente-de-orujo.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Aguardiente De Orujo</div>
@@ -513,7 +512,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/baileys-colada-D0CMla4X.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/baileys-colada.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Baileys Colada</div>
@@ -522,7 +521,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/big-ben-CbOKqa-z.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/big-ben.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Big Ben</div>
@@ -531,7 +530,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/blackberry-mule-BiGzxrRD.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/blackberry-mule.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Blackberry Mule</div>
@@ -540,7 +539,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/calimocho-B0J2LLRS.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/calimocho.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Calimocho</div>
@@ -549,7 +548,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/chu-chu-de-fresa-Y9YgzaUE.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/chu-chu-de-fresa.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Chu Chu de Fresa</div>
@@ -558,7 +557,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/chu-chu-Bwx00R9B.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/chu-chu.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Chu Chu</div>
@@ -567,7 +566,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/flamingo-CZ12pnsI.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/flamingo.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Flamingo</div>
@@ -576,7 +575,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/havana-red-mdNZvlq7.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/havana-red.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Havana Red</div>
@@ -585,7 +584,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/lady-killer-BYfaMefF.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/lady-killer.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Lady Killer</div>
@@ -594,7 +593,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/mojito-de-fresa-CPMQ6yfA.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/mojito-de-fresa.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Mojito de Fresa</div>
@@ -603,7 +602,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/mojito-CnI2MmdJ.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/mojito.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Mojito</div>
@@ -612,7 +611,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/pina-colada-DroGSI6v.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/pina-colada.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Pina Colada</div>
@@ -621,7 +620,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/sangria-PELZZHKy.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/sangria.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Sangria</div>
@@ -630,7 +629,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/skinny-bitch-C1r8svhw.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/skinny-bitch.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Skinny Bitch</div>
@@ -639,7 +638,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/tequila-sunrise-A9s7vWKS.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/tequila-sunrise.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Tequila Sunrise</div>
@@ -648,7 +647,7 @@
 							</div>
 							<div class="swiper-slide">
 								<div class="swiper-slide__wrapper">
-									<img src="/Sabor-y-Charla-restaurant-landing/dist/assets/tom-collins-CM4W2gq6.png" alt="sangria cocktail image">
+									<img src="img/common/cocktails/tom-collins.png" alt="sangria cocktail image">
 									<div class="slide-text">
 										<!-- <div class="slide-text__price">6€</div> -->
 										<div class="slide-text__title">Tom Collins</div>
@@ -737,10 +736,10 @@
 											<div class="footer-form__input-wrapper clients-wrapper">
 												<div class="footer-form__input-title">¿Cuánta gente?</div>
 												<input class="footer-form__input-input footer-form-users">
-												<img src="data:image/svg+xml,%3csvg%20width='18'%20height='18'%20viewBox='0%200%2018%2018'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M2.51677%2015.6216C2.44585%2015.8885%202.6047%2016.1623%202.87158%2016.2332C3.13846%2016.3042%203.4123%2016.1453%203.48323%2015.8784L2.51677%2015.6216ZM14.5168%2015.8784C14.5877%2016.1453%2014.8615%2016.3042%2015.1284%2016.2332C15.3953%2016.1623%2015.5542%2015.8885%2015.4832%2015.6216L14.5168%2015.8784ZM3.48323%2015.8784C4.11166%2013.5137%206.33577%2011.75%209%2011.75V10.75C5.89083%2010.75%203.2638%2012.8106%202.51677%2015.6216L3.48323%2015.8784ZM9%2011.75C11.6642%2011.75%2013.8883%2013.5137%2014.5168%2015.8784L15.4832%2015.6216C14.7362%2012.8106%2012.1092%2010.75%209%2010.75V11.75ZM11.5%205.25C11.5%206.63071%2010.3807%207.75%209%207.75V8.75C10.933%208.75%2012.5%207.183%2012.5%205.25H11.5ZM9%207.75C7.61929%207.75%206.5%206.63071%206.5%205.25H5.5C5.5%207.183%207.067%208.75%209%208.75V7.75ZM6.5%205.25C6.5%203.86929%207.61929%202.75%209%202.75V1.75C7.067%201.75%205.5%203.317%205.5%205.25H6.5ZM9%202.75C10.3807%202.75%2011.5%203.86929%2011.5%205.25H12.5C12.5%203.317%2010.933%201.75%209%201.75V2.75Z'%20fill='%2333230A'/%3e%3c/svg%3e" alt="" class="footer-form__input-icon">
+												<img src="img/common/other/user-brown.svg" alt="" class="footer-form__input-icon">
 											</div>
 											<div class="footer-form__input-wrapper text-input-wrapper">
-												<div class="footer-form__input-title">Tu correo electrónico</div>
+												<div class="footer-form__input-title">Movil</div>
 												<input class="footer-form__input-input footer-form-email">
 											</div>
 											<div class="footer-form__input-wrapper text-input-wrapper">
@@ -751,7 +750,7 @@
 										<button class="footer-form__book-button footer-form-button">
 											<div class="footer-form__book-button-text">RESERVAR</div>
 											<div class="footer-form__book-button-img-wrapper">
-												<img src="data:image/svg+xml,%3csvg%20width='26'%20height='8'%20viewBox='0%200%2026%208'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M0.646446%204.35355C0.451185%204.15829%200.451185%203.84171%200.646446%203.64645L3.82843%200.464466C4.02369%200.269204%204.34027%200.269204%204.53553%200.464466C4.7308%200.659728%204.7308%200.976311%204.53553%201.17157L1.70711%204L4.53553%206.82843C4.7308%207.02369%204.7308%207.34027%204.53553%207.53553C4.34027%207.7308%204.02369%207.7308%203.82843%207.53553L0.646446%204.35355ZM26%204.5H1V3.5H26V4.5Z'%20fill='%2333230A'/%3e%3c/svg%3e" alt="arrow icon">
+												<img src="img/common/other/arrow.svg" alt="arrow icon">
 											</div>
 										</button>
 									</div>

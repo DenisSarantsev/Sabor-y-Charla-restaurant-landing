@@ -67,6 +67,8 @@
 		z-index: 10;
 		font-size: 32px;
 		line-height: 137%;
+		display: flex;
+		align-items: center;
 		@media (max-width: 1920px){
 			padding: 0.781vw 0.781vw 0.781vw 15px;
 			font-size: 1.667vw;

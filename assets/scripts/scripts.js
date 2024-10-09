@@ -44,13 +44,6 @@ document.addEventListener("DOMContentLoaded", () => {
 			createOrderMessage("header-desktop-form")
 		})
 	}
-	// Отправка заявки с мобильной формы в шапке
-	if ( document.querySelector(".header-mobile-form-button") ) {
-		const headerFormButton = document.querySelector(".header-mobile-form-button");
-		headerFormButton.addEventListener("click", () => {
-			createOrderMessage("header-mobile-form")
-		})
-	}
 	// Отправка заявки с мобильной формы в футере
 	if ( document.querySelector(".footer-form-button") ) {
 		const headerFormButton = document.querySelector(".footer-form-button");
@@ -58,7 +51,37 @@ document.addEventListener("DOMContentLoaded", () => {
 			createOrderMessage("footer-form")
 		})
 	}
+	// Включение формы при нажатии на кнопку
+	if ( document.querySelector(".header-static__book-form-button") ) {
+		const bookButton = document.querySelector(".book-button__button");
+		const desktopForm = document.querySelector(".desktop-form");
+		const bodyElement = document.querySelector("body");
+		bookButton.addEventListener("click", () => {
+			desktopForm.classList.toggle("_hidden");
+			bodyElement.style.overflow = "hidden";
+		})
+	}
+	// Закрывание формы по нажатию на крестик
+	if ( document.querySelector(".header-form__close-button") ) {
+		const closeFormButton =  document.querySelector(".header-form__close-button");
+		const desktopForm = document.querySelector(".desktop-form");
+		const bodyElement = document.querySelector("body");
+		closeFormButton.addEventListener("click", () => {
+			desktopForm.classList.toggle("_hidden");
+			bodyElement.style.overflow = "scroll";
+		})
+	}
 
+	// Включение звука роллетов
+	// Для обеспечения автоматического воспроизведения можно добавить обработчик событий
+	// document.addEventListener('DOMContentLoaded', function () {
+	// 	const audio = document.getElementById('background-music');
+	// 	// Если нужно, можно начать проигрывание вручную через JavaScript, например, при клике на кнопку
+	// 	audio.play().catch(error => {
+	// 		// Браузеры могут блокировать autoplay, выводим сообщение об ошибке
+	// 		console.log('Autoplay was prevented by the browser');
+	// 	});
+	// });
 
 	
 
@@ -87,7 +110,10 @@ const scrollToElement = (scrollButton, targetElement) => {
 
 // ------------------------------------------- Fetch запрос для отправки заявки в бот
 const postOrderToBot = (uri, chatId, message) => {
-	fetch(uri, {
+	const mainLoader = document.querySelector(".main-loader");
+	mainLoader.classList.remove("_hidden");
+	setTimeout(() => {
+		fetch(uri, {
 			method: 'POST', // Необходимо указать строку 'POST', а не переменную
 			headers: {
 					'Content-Type': 'application/json', // Указываем тип контента
@@ -99,17 +125,25 @@ const postOrderToBot = (uri, chatId, message) => {
 			})
 	})
 	.then(response => {
+		mainLoader.classList.add("_hidden");
 			if (!response.ok) {
 					throw new Error('Network response was not ok');
 			}
 			return response.json();
 	})
 	.then(data => {
-			console.log('Message sent to bot:', data);
+		const desktopForm = document.querySelector(".desktop-form");
+		desktopForm.classList.add("_hidden");
+		const successModal = document.querySelector(".success-modal");
+		successModal.classList.remove("_hidden");
+		document.querySelector(".success-modal__success-button").addEventListener("click", () => {
+			successModal.classList.add("_hidden");
+		})
 	})
 	.catch(error => {
 			console.error('Error sending message to bot:', error);
 	});
+	}, 2000)
 };
 
 // ------------------------------------------- Данные для отправки
@@ -133,8 +167,11 @@ const createOrderMessage = (formType) => {
 			Phone: ${phone.value}
 		`
 		if ( date.value.length < 1 || time.value.length < 1 || users.value.length < 1 || email.value.length < 1 || phone.value.length < 1 ) {
-			console.log("no validate")
+			const errorMessage = document.querySelector(".header-form__form-error");
+			errorMessage.classList.remove("_hidden");
 		} else {
+			const errorMessage = document.querySelector(".header-form__form-error");
+			errorMessage.classList.add("_hidden");
 			postOrderToBot(URI_API, CHAT_ID, message)
 		}
 }
