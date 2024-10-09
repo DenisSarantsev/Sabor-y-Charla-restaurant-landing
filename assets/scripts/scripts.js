@@ -136,6 +136,7 @@ const postOrderToBot = (uri, chatId, message) => {
 		desktopForm.classList.add("_hidden");
 		const successModal = document.querySelector(".success-modal");
 		successModal.classList.remove("_hidden");
+		clearFields();
 		document.querySelector(".success-modal__success-button").addEventListener("click", () => {
 			successModal.classList.add("_hidden");
 			const bodyElement = document.querySelector("body");
@@ -169,11 +170,29 @@ const createOrderMessage = (formType) => {
 			Phone: ${phone.value}
 		`
 		if ( date.value.length < 1 || time.value.length < 1 || users.value.length < 1 || email.value.length < 1 || phone.value.length < 1 ) {
-			const errorMessage = document.querySelector(".header-form__form-error");
+			let errorMessage;
+			if ( formType === "header-desktop-form" ) {
+				errorMessage = document.querySelector(".header-form__form-error");
+			} else {
+				errorMessage = document.querySelector(".footer-form__form-error");
+			}
 			errorMessage.classList.remove("_hidden");
 		} else {
-			const errorMessage = document.querySelector(".header-form__form-error");
+			let errorMessage;
+			if ( formType === "header-desktop-form" ) {
+				errorMessage = document.querySelector(".header-form__form-error");
+			} else {
+				errorMessage = document.querySelector(".footer-form__form-error");
+			}
 			errorMessage.classList.add("_hidden");
 			postOrderToBot(URI_API, CHAT_ID, message)
 		}
+}
+
+// Функция очищения полей в формах 
+const clearFields = () => {
+	const allFields = document.querySelectorAll(".clear-field");
+	for ( let field of allFields ) {
+		field.value = ""
+	}
 }

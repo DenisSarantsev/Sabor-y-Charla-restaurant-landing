@@ -509,10 +509,10 @@
 		@media (max-height: 1180px){
 			width: 158vh;
 			height: 100vh;
-			@media (max-width: 768px){
-				width: 100vw;
-				height: 100vh;
-			}
+		}
+		@media (max-width: 768px){
+			width: 100vw;
+			height: 100vh;
 		}
 	}
 }
