@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const bodyElement = document.querySelector("body");
 		bookButton.addEventListener("click", () => {
 			desktopForm.classList.toggle("_hidden");
-			bodyElement.style.overflow = "hidden";
+			bodyElement.style.overflowY = "hidden";
 		})
 	}
 	// Закрывание формы по нажатию на крестик
@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
 		const bodyElement = document.querySelector("body");
 		closeFormButton.addEventListener("click", () => {
 			desktopForm.classList.toggle("_hidden");
-			bodyElement.style.overflow = "scroll";
+			bodyElement.style.overflowY = "scroll";
 		})
 	}
 
@@ -139,7 +139,7 @@ const postOrderToBot = (uri, chatId, message) => {
 		document.querySelector(".success-modal__success-button").addEventListener("click", () => {
 			successModal.classList.add("_hidden");
 			const bodyElement = document.querySelector("body");
-			bodyElement.style.overflow = "scroll";
+			bodyElement.style.overflowY = "scroll";
 		})
 	})
 	.catch(error => {

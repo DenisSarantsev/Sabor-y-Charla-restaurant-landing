@@ -374,6 +374,11 @@
 			height: 40px;
 		}
 	}
+	&__form-error {
+		text-align: center;
+		color: red;
+		font-size: 20px;
+	}
 }
 
 .date-wrapper {
