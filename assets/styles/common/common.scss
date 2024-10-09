@@ -11,6 +11,9 @@
 .section-block-container {
 	max-width: 1920px;
 	width: 100%;
+	@media (max-width: 768px){
+		width: 100vw;
+	}
 }
 .section-container-vertical-padding {
 	padding: 100px 0px;
