@@ -506,7 +506,7 @@
 		max-width: 1868px;
 		height: 1180px;
 		width: 100%;
-		@media (max-height: 1180px){
+		@media (max-height: 1180px) and (min-width: 768px){
 			width: 158vh;
 			height: 100vh;
 		}
