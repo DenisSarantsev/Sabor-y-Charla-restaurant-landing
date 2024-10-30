@@ -418,10 +418,12 @@
 		display: none;
 		position: absolute;
 		bottom: 0;
-		left: 16vw;
+		//left: 16vw;
+		left: -2vw;
 		@media (max-width: 768px){
 			display: block;
-			width: 71%;
+			//width: 71%;
+			width: 103vw;
 			height: 100%;
 			margin-bottom: -27.2%;
 			z-index: 5;
@@ -429,13 +431,13 @@
 		@media (max-width: 600px){
 			height: 95%;
 		}
-		@media (max-width: 340px){
-			display: block;
-			width: 70%;
-			height: 90%;
-			margin-bottom: -24.2%;
-			z-index: 5;
-		}
+		// @media (max-width: 340px){
+		// 	display: block;
+		// 	width: 70%;
+		// 	height: 90%;
+		// 	margin-bottom: -24.2%;
+		// 	z-index: 5;
+		// }
 	}
 	&__mobile-dark-image {
 		display: none;
@@ -587,21 +589,21 @@
 			width: 100vw;
 			height: 100%;
 			left: 0px;
-			top: 2vh;
+			top: -12vh;
 			@media (max-height: 1000px){
-				top: 0vh;
+				top: -10vh;
 			}
 			@media (max-height: 750px){
-				top: 2vh;
+				top: -8vh;
 			}
 			@media (max-height: 650px){
-				top: 4vh;
+				top: -5vh;
 			}
 			@media (max-height: 600px){
-				top: 8vh;
+				top: -4vh;
 			}
 			@media (max-height: 500px){
-				top: 14vh;
+				top: -3vh;
 			}
 		}
 		@media (max-height:	1180px) and (min-width: 768px){
@@ -646,7 +648,7 @@
 			justify-content: center;
 			align-items: start;
 			//left: 76vh;
-			top: 28vh;
+			top: 20vh;
 			height: 100%;
 			width: 100vw;
 			z-index: 11;
@@ -1017,4 +1019,56 @@
 			color: #33230A;
 		}
 	}
+}
+
+.header-mobile-form {
+	z-index: 1000;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+	animation: animateForm 0.5s ease 0s forwards;
+	@media (max-width: 500px){
+		padding: 15px;
+	}
+	&__wrapper {
+		padding: 15px;
+		position: absolute;
+		bottom: 10vh;
+		max-width: 500px;
+		width: 90%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 20px;
+		border-radius: 30px;
+		background: rgb(110,108,104);
+		background: linear-gradient(180deg, rgba(110,108,104,1) 0%, rgba(42,40,33,1) 83%);
+		padding: 25px 20px;
+		@media (max-width: 600px){
+			max-width: 100%;
+			height: auto;
+			justify-content: center;
+		}
+		@media (max-height: 750px){
+			bottom: 7vh;
+		}
+		@media (max-height: 700px){
+			bottom: 5vh;
+		}
+		@media (max-height: 700px){
+			bottom: 3vh;
+		}
+	}
+}
+
+.mobile-form {
+
 }

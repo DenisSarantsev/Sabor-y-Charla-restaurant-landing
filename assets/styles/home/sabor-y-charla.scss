@@ -126,6 +126,12 @@
 			max-width: 34px;
 		}
 	}
+	&__tik-tok-icon {
+		max-width: 37px;
+		@media (max-width: 1100px){
+			max-width: 34px;
+		}
+	}
 	&__text-wrapper-center-text {
 		font-family: $decorFont;
 		font-size: 90px;

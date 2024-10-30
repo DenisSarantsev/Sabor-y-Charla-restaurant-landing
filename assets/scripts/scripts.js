@@ -25,7 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
 			{ filename: 'cocteles.pdf', path: 'files/cocteles.pdf' },
 			{ filename: 'tapas.pdf', path: 'files/tapas.pdf' }
 		];
-		document.querySelector('.nav-menu__download-nav-button').addEventListener('click', function() {
+		document.querySelector('.nav-menu__download-nav-button').addEventListener('click', function(event) {
+			event.preventDefault()
 			files.forEach(file => {
 				const a = document.createElement('a');
 				a.href = file.path;

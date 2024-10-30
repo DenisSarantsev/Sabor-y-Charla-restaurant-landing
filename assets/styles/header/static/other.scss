@@ -13,6 +13,9 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@media (max-width: 768px){
+		display: none;
+	}
 	&__button {
 		border: 1px solid #EADFCA;
 		margin-top: -130px;
