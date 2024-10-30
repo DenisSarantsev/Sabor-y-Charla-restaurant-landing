@@ -1034,6 +1034,9 @@
 	align-items: center;
 	padding: 30px;
 	animation: animateForm 0.5s ease 0s forwards;
+	@media (min-width: 768px){
+		display: none;
+	}
 	@media (max-width: 500px){
 		padding: 15px;
 	}
