@@ -21,12 +21,30 @@ document.addEventListener("DOMContentLoaded", () => {
 	// ------------------------------------------------- Скачивание файлов меню
 	if ( document.querySelector('.nav-menu__download-nav-button') ) {
 		const files = [
-			{ filename: 'main-menu.pdf', path: 'files/main-menu.pdf' },
-			{ filename: 'cocteles.pdf', path: 'files/cocteles.pdf' },
-			{ filename: 'tapas.pdf', path: 'files/tapas.pdf' }
+			{ filename: 'menu.pdf', path: 'files/new-menu.pdf' },
+			// { filename: 'main-menu.pdf', path: 'files/main-menu.pdf' },
+			// { filename: 'cocteles.pdf', path: 'files/cocteles.pdf' },
+			// { filename: 'tapas.pdf', path: 'files/tapas.pdf' }
 		];
 		document.querySelector('.nav-menu__download-nav-button').addEventListener('click', function(event) {
-			event.preventDefault()
+			downloadMenu(files, event)
+		});
+	}
+
+	if ( document.querySelector('.main-menu__carta-button') ) {
+		const files = [
+			{ filename: 'menu.pdf', path: 'files/new-menu.pdf' },
+			// { filename: 'main-menu.pdf', path: 'files/main-menu.pdf' },
+			// { filename: 'cocteles.pdf', path: 'files/cocteles.pdf' },
+			// { filename: 'tapas.pdf', path: 'files/tapas.pdf' }
+		];
+		document.querySelector('.main-menu__carta-button').addEventListener('click', function(event) {
+			downloadMenu(files, event)
+		});
+	}
+
+	const downloadMenu = (files, event) => {
+		event.preventDefault()
 			files.forEach(file => {
 				const a = document.createElement('a');
 				a.href = file.path;
@@ -35,8 +53,8 @@ document.addEventListener("DOMContentLoaded", () => {
 				a.click();
 				document.body.removeChild(a); // Удаляем элемент после клика
 			});
-		});
 	}
+
 	// ------------------------------------------------- Отправка заявок в телеграм
 	// Отправка заявки с десктопной формы в шапке
 	if ( document.querySelector(".header-desktop-form-button") ) {
